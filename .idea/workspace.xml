@@ -4,9 +4,6 @@
     <list default="true" id="e01d8d81-78c9-4502-b723-044c42e287dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PageObjectSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectSample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjectSample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjectSample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjectTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjectTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObjectSample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-37">
-              <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
+            <state relative-caret-position="578">
+              <caret line="88" column="79" selection-start-line="88" selection-start-column="79" selection-end-line="88" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#exploreProducts#0;class#PageObjectSample#0" />
@@ -77,8 +74,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjectSample.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjectTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjectSample.java" />
       </list>
     </option>
   </component>
@@ -204,51 +201,59 @@
       <updated>1551339435010</updated>
       <workItem from="1551339442232" duration="22389000" />
       <workItem from="1551425310148" duration="9065000" />
-      <workItem from="1551682299985" duration="1704000" />
+      <workItem from="1551682299985" duration="2933000" />
     </task>
+    <task id="LOCAL-00001" summary="Waiter fixes">
+      <created>1551684588862</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1551684588862</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 14h 21m 07s.xml">
-      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 14h 22m 03s.xml">
-      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 14h 24m 56s.xml">
-      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 14h 29m 54s.xml">
-      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 14h 34m 46s.xml">
-      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 14h 35m 29s.xml">
-      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 14h 36m 00s.xml">
-      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 14h 36m 43s.xml">
-      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 14h 39m 35s.xml">
       <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
     </history-entry>
     <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 17h 16m 21s.xml">
       <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 10h 26m 08s.xml">
+      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 10h 26m 39s.xml">
+      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 10h 27m 20s.xml">
+      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 10h 27m 59s.xml">
+      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 10h 44m 47s.xml">
+      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 10h 45m 54s.xml">
+      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 10h 46m 40s.xml">
+      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 10h 49m 40s.xml">
+      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33158000" />
+    <option name="totallyTimeSpent" value="34387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49750414" visible="true" weight="0.25611246" />
-      <window_info id="Structure" order="1" sideWeight="0.5024958" side_tool="true" visible="true" weight="0.25611246" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49826187" visible="true" weight="0.25611246" />
+      <window_info id="Structure" order="1" sideWeight="0.50173813" side_tool="true" visible="true" weight="0.25611246" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -256,7 +261,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32698768" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.033594623" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -280,6 +285,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Waiter fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Waiter fixes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://D:/work/oracle/java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/System.java">
@@ -310,8 +319,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObjectSample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-37">
-          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
+        <state relative-caret-position="578">
+          <caret line="88" column="79" selection-start-line="88" selection-start-column="79" selection-end-line="88" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#exploreProducts#0;class#PageObjectSample#0" />

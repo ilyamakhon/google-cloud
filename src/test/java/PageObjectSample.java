@@ -83,16 +83,11 @@ public class PageObjectSample {
 
     public void setOperatingSystemAndSoftware(String OSAndSoftwareToBeSelected) {
         String selectElementXPath = "//div[@id='select_container_59']/md-select-menu/md-content/md-option/div[@class='md-text']";
-        List<WebElement> OSAndSoftwareList = driver.findElements(By.xpath(selectElementXPath));
 
         selectedOperatingSystemAndSoftware.click();
-
+        List<WebElement> OSAndSoftwareList = driver.findElements(By.xpath(selectElementXPath));
         wait.until(ExpectedConditions.visibilityOf(selectOSAndSoftwareContainer));
-        for (WebElement OSAndSoftware : OSAndSoftwareList) {
-            if (OSAndSoftware.getText().equals(OSAndSoftwareToBeSelected)) {
-                OSAndSoftware.click();
-            }
-        }
+        selectElement(OSAndSoftwareList, OSAndSoftwareToBeSelected);
     }
 
     public void setVMClass(String VMClassToBeSelected) {
@@ -100,13 +95,8 @@ public class PageObjectSample {
         List<WebElement> VMClassList = driver.findElements(By.xpath(selectElementXPath));
 
         selectedVMClass.click();
-
         wait.until(ExpectedConditions.visibilityOf(selectVMClassContainer));
-        for (WebElement VMClass : VMClassList) {
-            if (VMClass.getText().equals(VMClassToBeSelected)) {
-                VMClass.click();
-            }
-        }
+        selectElement(VMClassList, VMClassToBeSelected);
     }
 
     public String getSelectedOperatingSystemAndSoftware() {
@@ -117,4 +107,11 @@ public class PageObjectSample {
         return selectedVMClass.getText();
     }
 
+    private void selectElement(List<WebElement> listOfSelectElements, String elementToBeSelected) {
+        for (WebElement webElement : listOfSelectElements) {
+            if (webElement.getText().equals(elementToBeSelected)) {
+                webElement.click();
+            }
+        }
+    }
 }

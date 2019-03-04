@@ -27,13 +27,15 @@ public class PageObjectTest {
 
     @AfterClass
     public void afterClass() {
-        driver.quit();
+//        driver.quit();
     }
 
     @Test
     public void testProductEstimation() throws InterruptedException {
         String operatingSystemAndSoftware = "Free: Debian, CentOS, CoreOS, Ubuntu, or other User Provided OS";
         String VMClass = "Regular";
+        String instanceType = "n1-standard-8    (vCPUs: 8, RAM: 30 GB)";
+        String GPUType = "NVIDIA Tesla V100";
 
         PageObjectSample page = PageFactory.initElements(driver, PageObjectSample.class);
 
@@ -47,10 +49,21 @@ public class PageObjectTest {
 
         page.setOperatingSystemAndSoftware(operatingSystemAndSoftware);
 
-        Assert.assertEquals(page.getSelectedOperatingSystemAndSoftware(), operatingSystemAndSoftware, "Operating system and software does not match requested -> " + operatingSystemAndSoftware);
+//        Assert.assertEquals(page.getSelectedOperatingSystemAndSoftware(), operatingSystemAndSoftware, "Operating system and software does not match requested -> " + operatingSystemAndSoftware);
 
         page.setVMClass(VMClass);
 
-        Assert.assertEquals(page.getSelectedVMClass(), VMClass, "VM Class does not match requested -> " + VMClass);
+//        Assert.assertEquals(page.getSelectedVMClass(), VMClass, "VM Class does not match requested -> " + VMClass);
+//
+        page.setInstanceType(instanceType);
+//
+        page.addGPUs();
+//
+//        page.setNumberOfGPUs("1");
+//
+//        page.setGPUType(GPUType);
+
+
+
     }
 }

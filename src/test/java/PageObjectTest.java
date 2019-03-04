@@ -20,7 +20,7 @@ public class PageObjectTest {
     public void setUp() {
         System.setProperty(WEB_DRIVER, WEB_DRIVER_URL);
         driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get(BASE_URL);
     }
@@ -36,6 +36,9 @@ public class PageObjectTest {
         String VMClass = "Regular";
         String instanceType = "n1-standard-8    (vCPUs: 8, RAM: 30 GB)";
         String GPUType = "NVIDIA Tesla V100";
+        String localSSD = "2x375 GB";
+        String dataCenterLocation = "Frankfurt (europe-west3)";
+        String commitedUsage = "1 Year";
 
         PageObjectSample page = PageFactory.initElements(driver, PageObjectSample.class);
 
@@ -49,21 +52,25 @@ public class PageObjectTest {
 
         page.setOperatingSystemAndSoftware(operatingSystemAndSoftware);
 
-//        Assert.assertEquals(page.getSelectedOperatingSystemAndSoftware(), operatingSystemAndSoftware, "Operating system and software does not match requested -> " + operatingSystemAndSoftware);
+        Assert.assertEquals(page.getSelectedOperatingSystemAndSoftware(), operatingSystemAndSoftware, "Operating system and software does not match requested -> " + operatingSystemAndSoftware);
 
         page.setVMClass(VMClass);
 
-//        Assert.assertEquals(page.getSelectedVMClass(), VMClass, "VM Class does not match requested -> " + VMClass);
+        Assert.assertEquals(page.getSelectedVMClass(), VMClass, "VM Class does not match requested -> " + VMClass);
 //
         page.setInstanceType(instanceType);
 //
         page.addGPUs();
 //
-//        page.setNumberOfGPUs("1");
+        page.setNumberOfGPUs("1");
 //
-//        page.setGPUType(GPUType);
+        page.setGPUType(GPUType);
 
+        page.setLocalSSD(localSSD);
 
+        page.setDataCenterLocation(dataCenterLocation);
+
+        page.setCommitedUsage(commitedUsage);
 
     }
 }

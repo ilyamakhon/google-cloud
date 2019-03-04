@@ -12,7 +12,7 @@ public class PageObjectSample {
     private final WebDriver driver;
     private WebDriverWait wait;
 
-    private String elementXPath;
+    private String XPath;
 
     @FindBy(linkText = "EXPLORE ALL PRODUCTS")
     private WebElement exploreProductsLink;
@@ -47,6 +47,15 @@ public class PageObjectSample {
     @FindBy(id = "select_value_label_328")
     private WebElement selectedGPUType;
 
+    @FindBy(id = "select_value_label_43")
+    private WebElement selectedLocalSSD;
+
+    @FindBy(id = "select_value_label_44")
+    private WebElement selectedDataCenterLocation;
+
+    @FindBy(id = "select_value_label_106")
+    private WebElement selectedCommitedUsage;
+
     @FindBy(id = "select_container_59")
     private WebElement selectOSAndSoftwareContainer;
 
@@ -62,12 +71,21 @@ public class PageObjectSample {
     @FindBy(id = "select_container_332")
     private WebElement selectGPUTypeContainer;
 
+    @FindBy(id = "select_container_96")
+    private WebElement selectLocalSSDContainer;
+
+    @FindBy(id = "select_container_98")
+    private WebElement selectDataCenterLocationContainer;
+
+    @FindBy(id = "select_container_118")
+    private WebElement selectCommitedUsageContainer;
+
     @FindBy(xpath = "//md-checkbox[@aria-label='Add GPUs']")
     private WebElement addGPUCheckbox;
 
     public PageObjectSample(WebDriver driver) {
         this.driver = driver;
-        wait = new WebDriverWait(driver,4);
+        wait = new WebDriverWait(driver,5);
     }
 
     public PageObjectSample exploreProducts() {
@@ -108,53 +126,84 @@ public class PageObjectSample {
     }
 
     public void setOperatingSystemAndSoftware(String OSAndSoftwareToBeSelected) {
-        elementXPath = "//div[@id='select_container_59']/md-select-menu/md-content/md-option/div[@class='md-text']";
+        XPath = "//div[@id='select_container_59']/md-select-menu/md-content/md-option/div[@class='md-text']";
 
         selectedOperatingSystemAndSoftware.click();
         wait.until(ExpectedConditions.visibilityOf(selectOSAndSoftwareContainer));
 
-        List<WebElement> OSAndSoftwareList = driver.findElements(By.xpath(elementXPath));
+        List<WebElement> OSAndSoftwareList = driver.findElements(By.xpath(XPath));
         selectElement(OSAndSoftwareList, OSAndSoftwareToBeSelected);
     }
 
     public void setVMClass(String VMClassToBeSelected) {
-        elementXPath = "//div[@id='select_container_63']/md-select-menu/md-content/md-option/div[@class='md-text']";
+        XPath = "//div[@id='select_container_63']/md-select-menu/md-content/md-option/div[@class='md-text']";
 
         selectedVMClass.click();
         wait.until(ExpectedConditions.visibilityOf(selectVMClassContainer));
 
-        List<WebElement> VMClassList = driver.findElements(By.xpath(elementXPath));
+        List<WebElement> VMClassList = driver.findElements(By.xpath(XPath));
         selectElement(VMClassList, VMClassToBeSelected);
     }
 
     public void setInstanceType(String instanceToBeSelected) {
-        elementXPath = "//div[@id='select_container_94']/md-select-menu/md-content/md-optgroup/md-option/div[@class='md-text']";
+        XPath = "//div[@id='select_container_94']/md-select-menu/md-content/md-optgroup/md-option/div[@class='md-text']";
 
-        wait.until(ExpectedConditions.visibilityOf(selectedInstanceType)).click();
+        selectedInstanceType.click();
         wait.until(ExpectedConditions.visibilityOf(selectInstanceTypeContainer));
 
-        List<WebElement> listOfInstances = driver.findElements(By.xpath(elementXPath));
+        List<WebElement> listOfInstances = driver.findElements(By.xpath(XPath));
         selectElement(listOfInstances, instanceToBeSelected);
     }
 
     public void setNumberOfGPUs(String numberOfGPUsToBeSelected) {
-        elementXPath = "//div[@id='select_container_330']/md-select-menu/md-content/md-option/div[@class='md-text']";
+        XPath = "//div[@id='select_container_330']/md-select-menu/md-content/md-option/div[@class='md-text ng-binding']";
 
         selectedNumberOfGPUs.click();
-        List<WebElement> listOfGPUsNumber = driver.findElements(By.xpath(elementXPath));
-
         wait.until(ExpectedConditions.visibilityOf(selectNumberOfGPUsContainer));
+
+        List<WebElement> listOfGPUsNumber = driver.findElements(By.xpath(XPath));
         selectElement(listOfGPUsNumber, numberOfGPUsToBeSelected);
     }
 
 
-    public void setGPUType(String GPUType){
-        elementXPath = "//div[@id='select_container_332']/md-select-menu/md-content/md-optgroup/md-option/div[@class='md-text']";
-        List<WebElement> listOfGPUsNumber = driver.findElements(By.xpath(elementXPath));
+    public void setGPUType(String GPUTypeToBeSelected){
+        XPath = "//div[@id='select_container_332']/md-select-menu/md-content/md-option/div[@class='md-text ng-binding']";
 
-        selectedInstanceType.click();
+        selectedGPUType.click();
         wait.until(ExpectedConditions.visibilityOf(selectGPUTypeContainer));
-        selectElement(listOfGPUsNumber, GPUType);
+
+        List<WebElement> listOfGPUTypes = driver.findElements(By.xpath(XPath));
+        selectElement(listOfGPUTypes, GPUTypeToBeSelected);
+    }
+
+    public void setLocalSSD(String localSSDToBeSelected) {
+        XPath = "//div[@id='select_container_96']/md-select-menu/md-content/md-option/div[@class='md-text ng-binding']";
+
+        selectedLocalSSD.click();
+        wait.until(ExpectedConditions.visibilityOf(selectLocalSSDContainer));
+
+        List<WebElement> listOfLocalSSDs = driver.findElements(By.xpath(XPath));
+        selectElement(listOfLocalSSDs, localSSDToBeSelected);
+    }
+
+    public void setDataCenterLocation(String dataCenterLocationToBeSelected) {
+        XPath = "//div[@id='select_container_98']/md-select-menu/md-content/md-option/div[@class='md-text ng-binding']";
+
+        selectedDataCenterLocation.click();
+        wait.until(ExpectedConditions.visibilityOf(selectDataCenterLocationContainer));
+
+        List<WebElement> listOfDataCenterLocations = driver.findElements(By.xpath(XPath));
+        selectElement(listOfDataCenterLocations, dataCenterLocationToBeSelected);
+    }
+
+    public void setCommitedUsage(String commitedUsageToBeSelected) {
+        XPath = "//div[@id='select_container_118']/md-select-menu/md-content/md-option/div[@class='md-text']";
+
+        wait.until(ExpectedConditions.elementToBeClickable(selectedCommitedUsage)).click();
+        wait.until(ExpectedConditions.visibilityOf(selectCommitedUsageContainer));
+
+        List<WebElement> listOfCommitedUsageVariants = driver.findElements(By.xpath(XPath));
+        selectElement(listOfCommitedUsageVariants, commitedUsageToBeSelected);
     }
 
     public String getSelectedOperatingSystemAndSoftware() {

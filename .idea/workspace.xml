@@ -27,27 +27,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObjectSample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="69" column="41" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
+            <state relative-caret-position="2635">
+              <caret line="171" column="8" selection-start-line="171" selection-start-column="8" selection-end-line="171" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#exploreProducts#0;class#PageObjectSample#0" />
                 <element signature="method#seePricing#0;class#PageObjectSample#0" />
                 <element signature="method#calculate#0;class#PageObjectSample#0" />
-                <element signature="method#computeEngine#0;class#PageObjectSample#0" />
                 <element signature="method#checkWhatAreInstancesForEmptiness#0;class#PageObjectSample#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObjectTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="262">
               <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -72,8 +71,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjectSample.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjectTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjectSample.java" />
       </list>
     </option>
   </component>
@@ -143,7 +142,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551696788162" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551710221184" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -204,7 +203,7 @@
       <updated>1551339435010</updated>
       <workItem from="1551339442232" duration="22389000" />
       <workItem from="1551425310148" duration="9065000" />
-      <workItem from="1551682299985" duration="12171000" />
+      <workItem from="1551682299985" duration="23105000" />
     </task>
     <task id="LOCAL-00001" summary="Waiter fixes">
       <created>1551684588862</created>
@@ -220,50 +219,56 @@
       <option name="project" value="LOCAL" />
       <updated>1551685849309</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Waiter fixes">
+      <created>1551696830635</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1551696830635</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 13h 39m 07s.xml">
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 17h 11m 43s.xml">
       <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 13h 40m 32s.xml">
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 17h 15m 11s.xml">
       <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 13h 42m 09s.xml">
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 17h 30m 12s.xml">
       <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 13h 42m 53s.xml">
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 17h 31m 10s.xml">
       <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 13h 44m 08s.xml">
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 17h 32m 43s.xml">
       <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 13h 46m 31s.xml">
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 17h 33m 08s.xml">
       <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 13h 47m 06s.xml">
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 17h 34m 08s.xml">
       <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 13h 48m 41s.xml">
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 17h 34m 48s.xml">
       <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 13h 49m 31s.xml">
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 17h 35m 32s.xml">
       <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 13h 50m 34s.xml">
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.04 at 17h 36m 05s.xml">
       <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43625000" />
+    <option name="totallyTimeSpent" value="54559000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49828178" visible="true" weight="0.25611246" />
-      <window_info id="Structure" order="1" sideWeight="0.5017182" side_tool="true" visible="true" weight="0.25611246" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49832028" visible="true" weight="0.25611246" />
+      <window_info id="Structure" order="1" sideWeight="0.5016797" side_tool="true" visible="true" weight="0.25611246" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -271,7 +276,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34826428" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34826428" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -297,9 +302,9 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Waiter fixes" />
     <MESSAGE value="Selecting element fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Selecting element fixes" />
+    <MESSAGE value="Waiter fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Waiter fixes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://D:/work/oracle/java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/System.java">
@@ -323,27 +328,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObjectSample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="69" column="41" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
+        <state relative-caret-position="2635">
+          <caret line="171" column="8" selection-start-line="171" selection-start-column="8" selection-end-line="171" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#exploreProducts#0;class#PageObjectSample#0" />
             <element signature="method#seePricing#0;class#PageObjectSample#0" />
             <element signature="method#calculate#0;class#PageObjectSample#0" />
-            <element signature="method#computeEngine#0;class#PageObjectSample#0" />
             <element signature="method#checkWhatAreInstancesForEmptiness#0;class#PageObjectSample#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjectTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

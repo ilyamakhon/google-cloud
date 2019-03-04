@@ -10,6 +10,7 @@ import java.util.List;
 public class PageObjectSample {
 
     private final WebDriver driver;
+    private WebDriverWait wait;
 
     @FindBy(linkText = "EXPLORE ALL PRODUCTS")
     private WebElement exploreProductsLink;
@@ -35,9 +36,16 @@ public class PageObjectSample {
     @FindBy(id = "select_value_label_41")
     private WebElement selectedVMClass;
 
+    @FindBy(id = "select_container_59")
+    private WebElement selectOSAndSoftwareContainer;
+
+    @FindBy(id = "select_container_63")
+    private WebElement selectVMClassContainer;
+
 
     public PageObjectSample(WebDriver driver) {
         this.driver = driver;
+        wait = new WebDriverWait(driver,3);
     }
 
     public PageObjectSample exploreProducts() {
@@ -74,11 +82,12 @@ public class PageObjectSample {
     }
 
     public void setOperatingSystemAndSoftware(String OSAndSoftwareToBeSelected) {
-        String selectElementXPath = "//div[@id='select_container_59']/md-select-menu/md-content/md-option";
+        String selectElementXPath = "//div[@id='select_container_59']/md-select-menu/md-content/md-option/div[@class='md-text']";
         List<WebElement> OSAndSoftwareList = driver.findElements(By.xpath(selectElementXPath));
 
         selectedOperatingSystemAndSoftware.click();
-        System.out.println(OSAndSoftwareList.get(0).getText());
+
+        wait.until(ExpectedConditions.visibilityOf(selectOSAndSoftwareContainer));
         for (WebElement OSAndSoftware : OSAndSoftwareList) {
             if (OSAndSoftware.getText().equals(OSAndSoftwareToBeSelected)) {
                 OSAndSoftware.click();
@@ -87,11 +96,12 @@ public class PageObjectSample {
     }
 
     public void setVMClass(String VMClassToBeSelected) {
-        String selectElementXPath = "//div[@id='select_container_63']/md-select-menu/md-content/md-option/div[@class='md-text']";
+        String selectElementXPath = "//div[@id='select_container_63']/md-select-menu/md-content/md-option";
         List<WebElement> VMClassList = driver.findElements(By.xpath(selectElementXPath));
 
         selectedVMClass.click();
 
+        wait.until(ExpectedConditions.visibilityOf(selectVMClassContainer));
         for (WebElement VMClass : VMClassList) {
             if (VMClass.getText().equals(VMClassToBeSelected)) {
                 VMClass.click();

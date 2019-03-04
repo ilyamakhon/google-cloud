@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e01d8d81-78c9-4502-b723-044c42e287dc" name="Default Changelist" comment="" />
+    <list default="true" id="e01d8d81-78c9-4502-b723-044c42e287dc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjectSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectSample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjectSample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjectSample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjectTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjectTest.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,16 +30,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObjectSample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="76" column="105" selection-start-line="76" selection-start-column="105" selection-end-line="76" selection-end-column="105" />
+            <state relative-caret-position="-37">
+              <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#exploreProducts#0;class#PageObjectSample#0" />
                 <element signature="method#seePricing#0;class#PageObjectSample#0" />
                 <element signature="method#calculate#0;class#PageObjectSample#0" />
                 <element signature="method#checkWhatAreInstancesForEmptiness#0;class#PageObjectSample#0" />
-                <element signature="e#3151#3152#0" expanded="true" />
-                <element signature="e#3241#3242#0" expanded="true" />
+                <element signature="e#3118#3119#0" expanded="true" />
+                <element signature="e#3185#3186#0" expanded="true" />
+                <element signature="e#3227#3228#0" expanded="true" />
+                <element signature="e#3275#3276#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -42,10 +50,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObjectTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+            <state relative-caret-position="230">
+              <caret line="22" column="71" lean-forward="true" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#960#961#0" expanded="true" />
+                <element signature="e#989#990#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,12 +70,15 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjectTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjectSample.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjectTest.java" />
       </list>
     </option>
   </component>
@@ -76,18 +89,20 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -123,13 +138,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551438289358" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551449961642" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -189,51 +203,52 @@
       <option name="presentableId" value="Default" />
       <updated>1551339435010</updated>
       <workItem from="1551339442232" duration="22389000" />
-      <workItem from="1551425310148" duration="4158000" />
+      <workItem from="1551425310148" duration="9065000" />
+      <workItem from="1551682299985" duration="1704000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 12h 16m 33s.xml">
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 14h 21m 07s.xml">
       <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 12h 17m 18s.xml">
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 14h 22m 03s.xml">
       <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 12h 17m 54s.xml">
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 14h 24m 56s.xml">
       <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 12h 18m 45s.xml">
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 14h 29m 54s.xml">
       <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 12h 19m 38s.xml">
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 14h 34m 46s.xml">
       <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 12h 20m 57s.xml">
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 14h 35m 29s.xml">
       <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 12h 22m 35s.xml">
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 14h 36m 00s.xml">
       <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 14h 01m 00s.xml">
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 14h 36m 43s.xml">
       <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 14h 01m 56s.xml">
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 14h 39m 35s.xml">
       <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 14h 02m 40s.xml">
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.01 at 17h 16m 21s.xml">
       <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26547000" />
+    <option name="totallyTimeSpent" value="33158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49916804" visible="true" weight="0.25305623" />
-      <window_info id="Structure" order="1" sideWeight="0.50083196" side_tool="true" visible="true" weight="0.25305623" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49750414" visible="true" weight="0.25611246" />
+      <window_info id="Structure" order="1" sideWeight="0.5024958" side_tool="true" visible="true" weight="0.25611246" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -241,7 +256,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32698768" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32698768" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -283,26 +298,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObjectTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        <state relative-caret-position="230">
+          <caret line="22" column="71" lean-forward="true" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#960#961#0" expanded="true" />
+            <element signature="e#989#990#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObjectSample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="76" column="105" selection-start-line="76" selection-start-column="105" selection-end-line="76" selection-end-column="105" />
+        <state relative-caret-position="-37">
+          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#exploreProducts#0;class#PageObjectSample#0" />
             <element signature="method#seePricing#0;class#PageObjectSample#0" />
             <element signature="method#calculate#0;class#PageObjectSample#0" />
             <element signature="method#checkWhatAreInstancesForEmptiness#0;class#PageObjectSample#0" />
-            <element signature="e#3151#3152#0" expanded="true" />
-            <element signature="e#3241#3242#0" expanded="true" />
+            <element signature="e#3118#3119#0" expanded="true" />
+            <element signature="e#3185#3186#0" expanded="true" />
+            <element signature="e#3227#3228#0" expanded="true" />
+            <element signature="e#3275#3276#0" expanded="true" />
           </folding>
         </state>
       </provider>

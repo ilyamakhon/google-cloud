@@ -27,31 +27,30 @@ public class PageObjectTest {
 
     @AfterClass
     public void afterClass() {
-//        driver.quit();
+        driver.quit();
     }
 
     @Test
-    public void testProductEstimation() {
+    public void testProductEstimation() throws InterruptedException {
         String operatingSystemAndSoftware = "Free: Debian, CentOS, CoreOS, Ubuntu, or other User Provided OS";
         String VMClass = "Regular";
 
         PageObjectSample page = PageFactory.initElements(driver, PageObjectSample.class);
 
         page.exploreProducts()
-                .seePricing()
-                .calculate()
-                .computeEngine();
-//                .setNumberOfInstances("4");
-//
-//        Assert.assertNotNull(page.checkWhatAreInstancesForEmptiness(), "'What are instances for' input is not empty!");
+            .seePricing()
+            .calculate()
+            .computeEngine()
+            .setNumberOfInstances("4");
+
+        Assert.assertNotNull(page.checkWhatAreInstancesForEmptiness(), "'What are instances for' input is not empty!");
 
         page.setOperatingSystemAndSoftware(operatingSystemAndSoftware);
 
-//        Assert.assertEquals(page.getSelectedOperatingSystemAndSoftware(), operatingSystemAndSoftware, "Operating system and software does not match requested -> " + operatingSystemAndSoftware);
-//
-//        page.setVMClass(VMClass);
-//
-//        Assert.assertEquals(page.getSelectedVMClass(), VMClass, "VM Class does not match requested -> " + VMClass);
-    }
+        Assert.assertEquals(page.getSelectedOperatingSystemAndSoftware(), operatingSystemAndSoftware, "Operating system and software does not match requested -> " + operatingSystemAndSoftware);
 
+        page.setVMClass(VMClass);
+
+        Assert.assertEquals(page.getSelectedVMClass(), VMClass, "VM Class does not match requested -> " + VMClass);
+    }
 }

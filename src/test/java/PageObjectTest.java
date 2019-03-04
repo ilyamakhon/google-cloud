@@ -10,7 +10,8 @@ import java.util.concurrent.TimeUnit;
 
 public class PageObjectTest {
 
-    private static final String WEB_DRIVER_URL = "D:\\work\\webdriver\\chromedriver.exe";
+//    private static final String WEB_DRIVER_URL = "D:\\work\\webdriver\\chromedriver.exe";
+    private static final String WEB_DRIVER_URL = "C:\\work\\webdriver\\chromedriver.exe";
     private static final String WEB_DRIVER = "webdriver.chrome.driver";
     private static final String BASE_URL = "https://cloud.google.com/";
 
@@ -50,27 +51,27 @@ public class PageObjectTest {
 
         Assert.assertNotNull(page.checkWhatAreInstancesForEmptiness(), "'What are instances for' input is not empty!");
 
-        page.setOperatingSystemAndSoftware(operatingSystemAndSoftware);
+        page.setOperatingSystemAndSoftwareOption(operatingSystemAndSoftware);
 
         Assert.assertEquals(page.getSelectedOperatingSystemAndSoftware(), operatingSystemAndSoftware, "Operating system and software does not match requested -> " + operatingSystemAndSoftware);
 
-        page.setVMClass(VMClass);
+        page.setVMClassOption(VMClass);
 
         Assert.assertEquals(page.getSelectedVMClass(), VMClass, "VM Class does not match requested -> " + VMClass);
 //
-        page.setInstanceType(instanceType);
+        page.setInstanceTypeOption(instanceType);
 //
         page.addGPUs();
 //
-        page.setNumberOfGPUs("1");
+        page.setNumberOfGPUsOption("1");
 //
-        page.setGPUType(GPUType);
+        page.setGPUTypeOption(GPUType);
 
-        page.setLocalSSD(localSSD);
+        page.setLocalSSDOption(localSSD);
 
-        page.setDataCenterLocation(dataCenterLocation);
+        page.setDataCenterLocationOption(dataCenterLocation);
 
-        page.setCommitedUsage(commitedUsage);
+        page.setCommitedUsageOption(commitedUsage);
 
     }
 }

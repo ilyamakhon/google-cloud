@@ -1,3 +1,4 @@
+import bean.WebElementOptionModel;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,6 +12,7 @@ public class PageObjectSample {
 
     private final WebDriver driver;
     private WebDriverWait wait;
+    private WebElementOptionModel webElementOptionModel;
 
     private String XPath;
 
@@ -54,7 +56,7 @@ public class PageObjectSample {
     private WebElement selectedDataCenterLocation;
 
     @FindBy(id = "select_value_label_45")
-    private WebElement selectedCommitedUsage;
+    private WebElement selectedCommitmentTerm;
 
     @FindBy(id = "select_container_59")
     private WebElement selectOSAndSoftwareContainer;
@@ -78,7 +80,7 @@ public class PageObjectSample {
     private WebElement selectDataCenterLocationContainer;
 
     @FindBy(id = "select_container_103")
-    private WebElement selectCommitedUsageContainer;
+    private WebElement selectCommitmentTermContainer;
 
     @FindBy(xpath = "//md-checkbox[@aria-label='Add GPUs']")
     private WebElement addGPUCheckbox;
@@ -128,89 +130,167 @@ public class PageObjectSample {
     public void setOperatingSystemAndSoftwareOption(String OSAndSoftwareToBeSelected) {
         XPath = "//div[@id='select_container_59']/md-select-menu/md-content/md-option/div[@class='md-text']";
 
-        selectedOperatingSystemAndSoftware.click();
-        wait.until(ExpectedConditions.visibilityOf(selectOSAndSoftwareContainer));
+        webElementOptionModel = new WebElementOptionModel();
+        webElementOptionModel.setOptionToBeSelected(OSAndSoftwareToBeSelected);
+        webElementOptionModel.setXPath(XPath);
+        webElementOptionModel.setActionElement(selectedOperatingSystemAndSoftware);
+        webElementOptionModel.setElementWaitingToBeVisible(selectOSAndSoftwareContainer);
 
-        selectOption(XPath, OSAndSoftwareToBeSelected);
+        //        selectedOperatingSystemAndSoftware.click();
+//        wait.until(ExpectedConditions.visibilityOf(selectOSAndSoftwareContainer));
+
+        selectOption(webElementOptionModel);
     }
 
     public void setVMClassOption(String VMClassToBeSelected) {
         XPath = "//div[@id='select_container_63']/md-select-menu/md-content/md-option/div[@class='md-text']";
 
-        selectedVMClass.click();
-        wait.until(ExpectedConditions.visibilityOf(selectVMClassContainer));
+        webElementOptionModel = new WebElementOptionModel();
+        webElementOptionModel.setOptionToBeSelected(VMClassToBeSelected);
+        webElementOptionModel.setActionElement(selectedVMClass);
+        webElementOptionModel.setElementWaitingToBeVisible(selectVMClassContainer);
+        webElementOptionModel.setXPath(XPath);
 
-        selectOption(XPath, VMClassToBeSelected);
+//        selectedVMClass.click();
+//        wait.until(ExpectedConditions.visibilityOf(selectVMClassContainer));
+
+        selectOption(webElementOptionModel);
     }
 
     public void setInstanceTypeOption(String instanceToBeSelected) {
         XPath = "//div[@id='select_container_94']/md-select-menu/md-content/md-optgroup/md-option/div[@class='md-text']";
 
-        selectedInstanceType.click();
-        wait.until(ExpectedConditions.visibilityOf(selectInstanceTypeContainer));
+        webElementOptionModel = new WebElementOptionModel();
+        webElementOptionModel.setOptionToBeSelected(instanceToBeSelected);
+        webElementOptionModel.setActionElement(selectedInstanceType);
+        webElementOptionModel.setElementWaitingToBeVisible(selectInstanceTypeContainer);
+        webElementOptionModel.setXPath(XPath);
 
-        selectOption(XPath, instanceToBeSelected);
+
+//        selectedInstanceType.click();
+//        wait.until(ExpectedConditions.visibilityOf(selectInstanceTypeContainer));
+
+        selectOption(webElementOptionModel);
     }
 
     public void setNumberOfGPUsOption(String numberOfGPUsToBeSelected) {
         XPath = "//div[@id='select_container_330']/md-select-menu/md-content/md-option/div[@class='md-text ng-binding']";
 
-        selectedNumberOfGPUs.click();
-        wait.until(ExpectedConditions.visibilityOf(selectNumberOfGPUsContainer));
+        webElementOptionModel = new WebElementOptionModel();
+        webElementOptionModel.setActionElement(selectedNumberOfGPUs);
+        webElementOptionModel.setElementWaitingToBeVisible(selectNumberOfGPUsContainer);
+        webElementOptionModel.setXPath(XPath);
+//        selectedNumberOfGPUs.click();
+//        wait.until(ExpectedConditions.visibilityOf(selectNumberOfGPUsContainer));
 
-        selectOption(XPath, numberOfGPUsToBeSelected);
+        selectOption(webElementOptionModel);
     }
 
     public void setGPUTypeOption(String GPUTypeToBeSelected){
         XPath = "//div[@id='select_container_332']/md-select-menu/md-content/md-option/div[@class='md-text ng-binding']";
 
-        selectedGPUType.click();
-        wait.until(ExpectedConditions.visibilityOf(selectGPUTypeContainer));
+        webElementOptionModel = new WebElementOptionModel();
+        webElementOptionModel.setActionElement(selectedGPUType);
+        webElementOptionModel.setElementWaitingToBeVisible(selectGPUTypeContainer);
+        webElementOptionModel.setXPath(XPath);
+//        selectedGPUType.click();
+//        wait.until(ExpectedConditions.visibilityOf(selectGPUTypeContainer));
 
-        selectOption(XPath, GPUTypeToBeSelected);
+        selectOption(webElementOptionModel);
     }
 
     public void setLocalSSDOption(String localSSDToBeSelected) {
         XPath = "//div[@id='select_container_96']/md-select-menu/md-content/md-option/div[@class='md-text ng-binding']";
 
-        selectedLocalSSD.click();
-        wait.until(ExpectedConditions.visibilityOf(selectLocalSSDContainer));
+        webElementOptionModel = new WebElementOptionModel();
+        webElementOptionModel.setActionElement(selectedLocalSSD);
+        webElementOptionModel.setElementWaitingToBeVisible(selectLocalSSDContainer);
+        webElementOptionModel.setXPath(XPath);
+//        selectedLocalSSD.click();
+//        wait.until(ExpectedConditions.visibilityOf(selectLocalSSDContainer));
 
-        selectOption(XPath, localSSDToBeSelected);
+        selectOption(webElementOptionModel);
     }
 
     public void setDataCenterLocationOption(String dataCenterLocationToBeSelected) {
         XPath = "//div[@id='select_container_98']/md-select-menu/md-content/md-option/div[@class='md-text ng-binding']";
 
-        selectedDataCenterLocation.click();
-        wait.until(ExpectedConditions.visibilityOf(selectDataCenterLocationContainer));
+        webElementOptionModel = new WebElementOptionModel();
+        webElementOptionModel.setActionElement(selectedDataCenterLocation);
+        webElementOptionModel.setElementWaitingToBeVisible(selectDataCenterLocationContainer);
+        webElementOptionModel.setXPath(XPath);
+        //selectedDataCenterLocation.click();
+        //wait.until(ExpectedConditions.visibilityOf(selectDataCenterLocationContainer));
 
-        selectOption(XPath, dataCenterLocationToBeSelected);
+        selectOption(webElementOptionModel);
     }
 
-    public void setCommitedUsageOption(String commitedUsageToBeSelected) {
+    public void setCommitmentTermOption(String commitmentTermToBeSelected) {
         XPath = "//div[@id='select_container_103']/md-select-menu/md-content/md-option/div[@class='md-text']";
 
-        wait.until(ExpectedConditions.elementToBeClickable(selectedCommitedUsage)).click();
-        wait.until(ExpectedConditions.visibilityOf(selectCommitedUsageContainer));
+        webElementOptionModel = new WebElementOptionModel();
+        webElementOptionModel.setElementWaitingForClick(selectedCommitmentTerm);
+        webElementOptionModel.setElementWaitingToBeVisible(selectCommitmentTermContainer);
+        webElementOptionModel.setXPath(XPath);
+//        wait.until(ExpectedConditions.elementToBeClickable(selectedCommitmentTerm)).click();
+//        wait.until(ExpectedConditions.visibilityOf(selectCommitmentTermContainer));
 
-        selectOption(XPath, commitedUsageToBeSelected);
+        selectOption(webElementOptionModel);
     }
 
-    public String getSelectedOperatingSystemAndSoftware() {
-        return selectedOperatingSystemAndSoftware.getText();
-    }
+//    public String getOperatingSystemAndSoftware() {
+//        return selectedOperatingSystemAndSoftware.getText();
+//    }
+//
+//    public String getVMClass() {
+//        return selectedVMClass.getText();
+//    }
+//
+//    public String getDataCenterLocation() {
+//        return selectedDataCenterLocation.getText();
+//    }
+//
+//    public String getInstanceType() {
+//        return selectedInstanceType.getText();
+//    }
+//
+//    public String getLocalSSD() {
+//        return selectedLocalSSD.getText();
+//    }
+//
+//    public String getCommitmentTerm() {
+//        return selectedCommitmentTerm.getText();
+//    }
 
-    public String getSelectedVMClass() {
-        return selectedVMClass.getText();
-    }
+//    private void selectOption(String XPath, String optionToBeSelected) {
+//        List<WebElement> listOfSelectOptions = driver.findElements(By.xpath(XPath));
+//
+//        for (WebElement webElement : listOfSelectOptions) {
+//            System.out.println(webElement.getText());
+//            if (webElement.getText().equals(optionToBeSelected)) {
+//                webElement.click();
+//            }
+//        }
+//    }
 
-    private void selectOption(String XPath, String optionToBeSelected) {
-        List<WebElement> listOfSelectOptions = driver.findElements(By.xpath(XPath));
+    private void selectOption(WebElementOptionModel webElementOptionModel) {
+        if (webElementOptionModel.getActionElement() != null) {
+            webElementOptionModel.getActionElement().click();
+        }
+
+        if (webElementOptionModel.getElementWaitingForClick() != null) {
+            wait.until(ExpectedConditions.elementToBeClickable(webElementOptionModel.getElementWaitingForClick()));
+        }
+
+        if (webElementOptionModel.getElementWaitingToBeVisible() != null) {
+            wait.until(ExpectedConditions.visibilityOf(webElementOptionModel.getElementWaitingToBeVisible()));
+        }
+
+        List<WebElement> listOfSelectOptions = driver.findElements(By.xpath(webElementOptionModel.getXPath()));
 
         for (WebElement webElement : listOfSelectOptions) {
             System.out.println(webElement.getText());
-            if (webElement.getText().equals(optionToBeSelected)) {
+            if (webElement.getText().equals(webElementOptionModel.getOptionToBeSelected())) {
                 webElement.click();
             }
         }

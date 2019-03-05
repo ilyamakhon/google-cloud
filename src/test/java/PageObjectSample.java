@@ -134,11 +134,9 @@ public class PageObjectSample {
     public void setOperatingSystemAndSoftwareOption(String OSAndSoftwareToBeSelected) {
         XPath = "//div[@id='select_container_59']/md-select-menu/md-content/md-option/div[@class='md-text']";
 
-        webElementOptionModel = new WebElementOptionModel();
-        webElementOptionModel.setOptionToBeSelected(OSAndSoftwareToBeSelected);
-        webElementOptionModel.setXPath(XPath);
-        webElementOptionModel.setActionElement(selectedOperatingSystemAndSoftware);
-        webElementOptionModel.setElementWaitingToBeVisible(selectOSAndSoftwareContainer);
+        webElementOptionModel = buildModel(
+                XPath, OSAndSoftwareToBeSelected, selectedOperatingSystemAndSoftware, null, selectOSAndSoftwareContainer
+        );
 
         selectOption(webElementOptionModel);
     }
@@ -146,11 +144,9 @@ public class PageObjectSample {
     public void setVMClassOption(String VMClassToBeSelected) {
         XPath = "//div[@id='select_container_63']/md-select-menu/md-content/md-option/div[@class='md-text']";
 
-        webElementOptionModel = new WebElementOptionModel();
-        webElementOptionModel.setOptionToBeSelected(VMClassToBeSelected);
-        webElementOptionModel.setActionElement(selectedVMClass);
-        webElementOptionModel.setElementWaitingToBeVisible(selectVMClassContainer);
-        webElementOptionModel.setXPath(XPath);
+        webElementOptionModel = buildModel(
+                XPath, VMClassToBeSelected, selectedVMClass,null, selectVMClassContainer
+        );
 
         selectOption(webElementOptionModel);
     }
@@ -158,11 +154,9 @@ public class PageObjectSample {
     public void setInstanceTypeOption(String instanceToBeSelected) {
         XPath = "//div[@id='select_container_94']/md-select-menu/md-content/md-optgroup/md-option/div[@class='md-text']";
 
-        webElementOptionModel = new WebElementOptionModel();
-        webElementOptionModel.setOptionToBeSelected(instanceToBeSelected);
-        webElementOptionModel.setActionElement(selectedInstanceType);
-        webElementOptionModel.setElementWaitingToBeVisible(selectInstanceTypeContainer);
-        webElementOptionModel.setXPath(XPath);
+        webElementOptionModel = buildModel(
+                XPath, instanceToBeSelected, selectedInstanceType, null, selectInstanceTypeContainer
+        );
 
         selectOption(webElementOptionModel);
     }
@@ -170,11 +164,9 @@ public class PageObjectSample {
     public void setNumberOfGPUsOption(String numberOfGPUsToBeSelected) {
         XPath = "//div[@id='select_container_330']/md-select-menu/md-content/md-option/div[@class='md-text ng-binding']";
 
-        webElementOptionModel = new WebElementOptionModel();
-        webElementOptionModel.setOptionToBeSelected(numberOfGPUsToBeSelected);
-        webElementOptionModel.setActionElement(selectedNumberOfGPUs);
-        webElementOptionModel.setElementWaitingToBeVisible(selectNumberOfGPUsContainer);
-        webElementOptionModel.setXPath(XPath);
+        webElementOptionModel = buildModel(
+                XPath, numberOfGPUsToBeSelected, selectedNumberOfGPUs, null, selectNumberOfGPUsContainer
+        );
 
         selectOption(webElementOptionModel);
     }
@@ -182,11 +174,9 @@ public class PageObjectSample {
     public void setGPUTypeOption(String GPUTypeToBeSelected){
         XPath = "//div[@id='select_container_332']/md-select-menu/md-content/md-option/div[@class='md-text ng-binding']";
 
-        webElementOptionModel = new WebElementOptionModel();
-        webElementOptionModel.setOptionToBeSelected(GPUTypeToBeSelected);
-        webElementOptionModel.setActionElement(selectedGPUType);
-        webElementOptionModel.setElementWaitingToBeVisible(selectGPUTypeContainer);
-        webElementOptionModel.setXPath(XPath);
+        webElementOptionModel = buildModel(
+                XPath, GPUTypeToBeSelected, selectedGPUType, null, selectGPUTypeContainer
+        );
 
         selectOption(webElementOptionModel);
     }
@@ -194,11 +184,9 @@ public class PageObjectSample {
     public void setLocalSSDOption(String localSSDToBeSelected) {
         XPath = "//div[@id='select_container_96']/md-select-menu/md-content/md-option/div[@class='md-text ng-binding']";
 
-        webElementOptionModel = new WebElementOptionModel();
-        webElementOptionModel.setOptionToBeSelected(localSSDToBeSelected);
-        webElementOptionModel.setActionElement(selectedLocalSSD);
-        webElementOptionModel.setElementWaitingToBeVisible(selectLocalSSDContainer);
-        webElementOptionModel.setXPath(XPath);
+        webElementOptionModel = buildModel(
+                XPath, localSSDToBeSelected, selectedLocalSSD, null, selectLocalSSDContainer
+        );
 
         selectOption(webElementOptionModel);
     }
@@ -206,11 +194,9 @@ public class PageObjectSample {
     public void setDataCenterLocationOption(String dataCenterLocationToBeSelected) {
         XPath = "//div[@id='select_container_98']/md-select-menu/md-content/md-option/div[@class='md-text ng-binding']";
 
-        webElementOptionModel = new WebElementOptionModel();
-        webElementOptionModel.setOptionToBeSelected(dataCenterLocationToBeSelected);
-        webElementOptionModel.setActionElement(selectedDataCenterLocation);
-        webElementOptionModel.setElementWaitingToBeVisible(selectDataCenterLocationContainer);
-        webElementOptionModel.setXPath(XPath);
+        webElementOptionModel = buildModel(
+                XPath, dataCenterLocationToBeSelected, selectedDataCenterLocation, null, selectDataCenterLocationContainer
+        );
 
         selectOption(webElementOptionModel);
     }
@@ -218,11 +204,9 @@ public class PageObjectSample {
     public void setCommitmentTermOption(String commitmentTermToBeSelected) {
         XPath = "//div[@id='select_container_103']/md-select-menu/md-content/md-option/div[@class='md-text']";
 
-        webElementOptionModel = new WebElementOptionModel();
-        webElementOptionModel.setOptionToBeSelected(commitmentTermToBeSelected);
-        webElementOptionModel.setElementWaitingForClick(selectedCommitmentTerm);
-        webElementOptionModel.setElementWaitingToBeVisible(selectCommitmentTermContainer);
-        webElementOptionModel.setXPath(XPath);
+        webElementOptionModel = buildModel(
+                XPath, commitmentTermToBeSelected, null, selectedCommitmentTerm, selectCommitmentTermContainer
+        );
 
         selectOption(webElementOptionModel);
     }
@@ -251,5 +235,25 @@ public class PageObjectSample {
                 webElement.click();
             }
         }
+    }
+
+
+
+
+
+    private WebElementOptionModel buildModel(String XPath,
+                                             String optionToBeSelected,
+                                             WebElement actionElement,
+                                             WebElement elementWaitingForClick,
+                                             WebElement elementWaitingToBeVisible) {
+
+        return WebElementOptionModel.ModelBuilder
+                .create()
+                    .withXPath(XPath)
+                    .withOptionToBeSelected(optionToBeSelected)
+                    .withActionElement(actionElement)
+                    .withElementWaitingForClick(elementWaitingForClick)
+                    .withElementWaitingToBeVisible(elementWaitingToBeVisible)
+                    .build();
     }
 }

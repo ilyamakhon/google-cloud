@@ -4,7 +4,8 @@
     <list default="true" id="e01d8d81-78c9-4502-b723-044c42e287dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PageObjectSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectSample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjectSample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjectSample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjectTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjectTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObjectSample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="303" column="123" selection-start-line="303" selection-start-column="123" selection-end-line="303" selection-end-column="123" />
+            <state relative-caret-position="1049">
+              <caret line="209" selection-start-line="209" selection-end-line="209" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/bean/WebElementOptionModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+            <state relative-caret-position="-272">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="12" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#350#351#0" expanded="true" />
@@ -60,6 +61,10 @@
                 <element signature="e#958#959#0" expanded="true" />
                 <element signature="e#1162#1163#0" expanded="true" />
                 <element signature="e#1210#1211#0" expanded="true" />
+                <element signature="e#2700#2701#0" expanded="true" />
+                <element signature="e#2748#2749#0" expanded="true" />
+                <element signature="e#3480#3481#0" expanded="true" />
+                <element signature="e#3515#3516#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,6 +91,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>setElementWaitingToBeVisible</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -93,9 +103,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/java/bean/WebElementModel.java" />
-        <option value="$PROJECT_DIR$/src/test/java/bean/WebElementOptionModel.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjectTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/bean/WebElementOptionModel.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjectSample.java" />
       </list>
     </option>
@@ -168,7 +178,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551794006690" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551795594901" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -236,7 +246,7 @@
       <workItem from="1551425310148" duration="9065000" />
       <workItem from="1551682299985" duration="23105000" />
       <workItem from="1551717881043" duration="6046000" />
-      <workItem from="1551770467783" duration="9397000" />
+      <workItem from="1551770467783" duration="10981000" />
     </task>
     <task id="LOCAL-00001" summary="Waiter fixes">
       <created>1551684588862</created>
@@ -266,13 +276,17 @@
       <option name="project" value="LOCAL" />
       <updated>1551786305034</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Model fixes">
+      <created>1551794098476</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1551794098477</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.05 at 10h 22m 48s.xml">
-      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="PageObjectTest_testProductEstimation - 2019.03.05 at 14h 42m 14s.xml">
       <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
     </history-entry>
@@ -300,9 +314,12 @@
     <history-entry file="PageObjectTest_testProductEstimation - 2019.03.05 at 16h 51m 17s.xml">
       <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.05 at 16h 53m 54s.xml">
+      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70002000" />
+    <option name="totallyTimeSpent" value="71586000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -315,7 +332,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49590835" visible="true" weight="0.26222494" />
       <window_info id="Structure" order="1" sideWeight="0.5040917" side_tool="true" visible="true" weight="0.26222494" />
@@ -356,7 +372,8 @@
     <MESSAGE value="Selecting element fixes" />
     <MESSAGE value="Waiter fixes" />
     <MESSAGE value="Model added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Model added" />
+    <MESSAGE value="Model fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Model fixes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://D:/work/oracle/java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/System.java" />
@@ -375,10 +392,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/bean/WebElementOptionModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+        <state relative-caret-position="-272">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="12" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#350#351#0" expanded="true" />
@@ -397,24 +424,18 @@
             <element signature="e#958#959#0" expanded="true" />
             <element signature="e#1162#1163#0" expanded="true" />
             <element signature="e#1210#1211#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjectTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2700#2701#0" expanded="true" />
+            <element signature="e#2748#2749#0" expanded="true" />
+            <element signature="e#3480#3481#0" expanded="true" />
+            <element signature="e#3515#3516#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObjectSample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="303" column="123" selection-start-line="303" selection-start-column="123" selection-end-line="303" selection-end-column="123" />
+        <state relative-caret-position="1049">
+          <caret line="209" selection-start-line="209" selection-end-line="209" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

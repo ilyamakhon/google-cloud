@@ -43,6 +43,7 @@ public class PageObjectTest {
 
         PageObjectSample page = PageFactory.initElements(driver, PageObjectSample.class);
 
+//        page.waitForElement();
         page.exploreProducts()
             .seePricing()
             .calculate()
@@ -52,13 +53,13 @@ public class PageObjectTest {
         Assert.assertNotNull(page.checkWhatAreInstancesForEmptiness(), "'What are instances for' input is not empty!");
 
         page.setOperatingSystemAndSoftwareOption(operatingSystemAndSoftware);
-
-//        Assert.assertEquals(page.getOperatingSystemAndSoftware(), operatingSystemAndSoftware, "Operating system and software does not match requested -> " + operatingSystemAndSoftware);
-
-        page.setVMClassOption(VMClass);
-
-//        Assert.assertEquals(page.getVMClass(), VMClass, "VM Class does not match requested -> " + VMClass);
 //
+//        Assert.assertEquals(page.getOperatingSystemAndSoftware(), operatingSystemAndSoftware, "Operating system and software does not match requested -> " + operatingSystemAndSoftware);
+//
+        page.setVMClassOption(VMClass);
+//
+//        Assert.assertEquals(page.getVMClass(), VMClass, "VM Class does not match requested -> " + VMClass);
+
         page.setInstanceTypeOption(instanceType);
 //
         page.addGPUs();

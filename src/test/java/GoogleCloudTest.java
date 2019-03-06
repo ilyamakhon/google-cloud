@@ -5,13 +5,13 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import pages.PageObjectSample;
 
 import java.util.concurrent.TimeUnit;
 
-public class PageObjectTest {
+public class GoogleCloudTest {
 
     private static final String WEB_DRIVER_URL = "D:\\work\\webdriver\\chromedriver.exe";
-//    private static final String WEB_DRIVER_URL = "C:\\work\\webdriver\\chromedriver.exe";
     private static final String WEB_DRIVER = "webdriver.chrome.driver";
     private static final String BASE_URL = "https://cloud.google.com/";
 
@@ -28,7 +28,7 @@ public class PageObjectTest {
 
     @AfterClass
     public void afterClass() {
-//        driver.quit();
+        driver.quit();
     }
 
     @Test
@@ -43,7 +43,6 @@ public class PageObjectTest {
 
         PageObjectSample page = PageFactory.initElements(driver, PageObjectSample.class);
 
-//        page.waitForElement();
         page.exploreProducts()
             .seePricing()
             .calculate()

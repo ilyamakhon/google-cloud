@@ -1,24 +1,22 @@
+package pages;
+
 import bean.WebElementOptionModel;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
 import java.util.List;
-import java.util.NoSuchElementException;
-import java.util.function.Function;
 
-import static java.util.concurrent.TimeUnit.SECONDS;
+import static bean.WebElementOptionModel.SelectType.SELECT_WITHOUT_GROUPS;
+import static bean.WebElementOptionModel.SelectType.SELECT_WITH_GROUPS;
 
 public class PageObjectSample {
 
     private final WebDriver driver;
     private WebDriverWait wait;
-    private WebElementOptionModel webElementOptionModel;
-
-    private String XPath;
 
     @FindBy(linkText = "EXPLORE ALL PRODUCTS")
     private WebElement exploreProductsLink;
@@ -132,89 +130,72 @@ public class PageObjectSample {
     }
 
     public void setOperatingSystemAndSoftwareOption(String OSAndSoftwareToBeSelected) {
-        XPath = "//div[@id='select_container_59']/md-select-menu/md-content/md-option/div[@class='md-text']";
-
-        webElementOptionModel = buildModel(
-                XPath, OSAndSoftwareToBeSelected, selectedOperatingSystemAndSoftware, null, selectOSAndSoftwareContainer
-        );
-
-        selectOption(webElementOptionModel);
+        selectOption(
+                buildSelectOptionModel(
+                    buildXPath(SELECT_WITHOUT_GROUPS, "select_container_59")
+                    , OSAndSoftwareToBeSelected, selectedOperatingSystemAndSoftware, null, selectOSAndSoftwareContainer
+        ));
     }
 
     public void setVMClassOption(String VMClassToBeSelected) {
-        XPath = "//div[@id='select_container_63']/md-select-menu/md-content/md-option/div[@class='md-text']";
-
-        webElementOptionModel = buildModel(
-                XPath, VMClassToBeSelected, selectedVMClass,null, selectVMClassContainer
-        );
-
-        selectOption(webElementOptionModel);
+        selectOption(
+                buildSelectOptionModel(
+                    buildXPath(SELECT_WITHOUT_GROUPS, "select_container_63")
+                    , VMClassToBeSelected, selectedVMClass,null, selectVMClassContainer
+        ));
     }
 
     public void setInstanceTypeOption(String instanceToBeSelected) {
-        XPath = "//div[@id='select_container_94']/md-select-menu/md-content/md-optgroup/md-option/div[@class='md-text']";
-
-        webElementOptionModel = buildModel(
-                XPath, instanceToBeSelected, selectedInstanceType, null, selectInstanceTypeContainer
-        );
-
-        selectOption(webElementOptionModel);
+        selectOption(
+                buildSelectOptionModel(
+                    buildXPath(SELECT_WITH_GROUPS, "select_container_94")
+                    , instanceToBeSelected, selectedInstanceType, null, selectInstanceTypeContainer
+        ));
     }
 
     public void setNumberOfGPUsOption(String numberOfGPUsToBeSelected) {
-        XPath = "//div[@id='select_container_330']/md-select-menu/md-content/md-option/div[@class='md-text ng-binding']";
-
-        webElementOptionModel = buildModel(
-                XPath, numberOfGPUsToBeSelected, selectedNumberOfGPUs, null, selectNumberOfGPUsContainer
-        );
-
-        selectOption(webElementOptionModel);
+        selectOption(
+                buildSelectOptionModel(
+                    buildXPath(SELECT_WITHOUT_GROUPS, "select_container_330")
+                    , numberOfGPUsToBeSelected, selectedNumberOfGPUs, null, selectNumberOfGPUsContainer
+        ));
     }
 
     public void setGPUTypeOption(String GPUTypeToBeSelected){
-        XPath = "//div[@id='select_container_332']/md-select-menu/md-content/md-option/div[@class='md-text ng-binding']";
-
-        webElementOptionModel = buildModel(
-                XPath, GPUTypeToBeSelected, selectedGPUType, null, selectGPUTypeContainer
-        );
-
-        selectOption(webElementOptionModel);
+        selectOption(
+                buildSelectOptionModel(
+                    buildXPath(SELECT_WITHOUT_GROUPS, "select_container_332")
+                    , GPUTypeToBeSelected, selectedGPUType, null, selectGPUTypeContainer
+        ));
     }
 
     public void setLocalSSDOption(String localSSDToBeSelected) {
-        XPath = "//div[@id='select_container_96']/md-select-menu/md-content/md-option/div[@class='md-text ng-binding']";
-
-        webElementOptionModel = buildModel(
-                XPath, localSSDToBeSelected, selectedLocalSSD, null, selectLocalSSDContainer
-        );
-
-        selectOption(webElementOptionModel);
+        selectOption(
+                buildSelectOptionModel(
+                    buildXPath(SELECT_WITHOUT_GROUPS, "select_container_96")
+                    , localSSDToBeSelected, selectedLocalSSD, null, selectLocalSSDContainer
+        ));
     }
 
     public void setDataCenterLocationOption(String dataCenterLocationToBeSelected) {
-        XPath = "//div[@id='select_container_98']/md-select-menu/md-content/md-option/div[@class='md-text ng-binding']";
-
-        webElementOptionModel = buildModel(
-                XPath, dataCenterLocationToBeSelected, selectedDataCenterLocation, null, selectDataCenterLocationContainer
-        );
-
-        selectOption(webElementOptionModel);
+        selectOption(
+                buildSelectOptionModel(
+                    buildXPath(SELECT_WITHOUT_GROUPS, "select_container_98")
+                    , dataCenterLocationToBeSelected, selectedDataCenterLocation, null, selectDataCenterLocationContainer
+        ));
     }
 
     public void setCommitmentTermOption(String commitmentTermToBeSelected) {
-        XPath = "//div[@id='select_container_103']/md-select-menu/md-content/md-option/div[@class='md-text']";
-
-        webElementOptionModel = buildModel(
-                XPath, commitmentTermToBeSelected, null, selectedCommitmentTerm, selectCommitmentTermContainer
-        );
-
-        selectOption(webElementOptionModel);
+        selectOption(
+                buildSelectOptionModel(
+                    buildXPath(SELECT_WITHOUT_GROUPS, "select_container_103"),
+                    commitmentTermToBeSelected, null, selectedCommitmentTerm, selectCommitmentTermContainer
+        ));
     }
 
 
 
     private void selectOption(WebElementOptionModel webElementOptionModel) {
-
         if (webElementOptionModel.getActionElement() != null) {
             webElementOptionModel.getActionElement().click();
         }
@@ -237,16 +218,23 @@ public class PageObjectSample {
         }
     }
 
+    private String buildXPath(WebElementOptionModel.SelectType selectType, String containerID) {
+        switch (selectType) {
+            case SELECT_WITH_GROUPS:
+                return "//div[@id='"+containerID+"']/md-select-menu/md-content/md-optgroup/md-option";
+            case SELECT_WITHOUT_GROUPS:
+                return "//div[@id='"+containerID+"']/md-select-menu/md-content/md-option";
+        }
 
+        return null;
+    }
 
-
-
-    private WebElementOptionModel buildModel(String XPath,
-                                             String optionToBeSelected,
-                                             WebElement actionElement,
-                                             WebElement elementWaitingForClick,
-                                             WebElement elementWaitingToBeVisible) {
-
+    private WebElementOptionModel buildSelectOptionModel(String XPath,
+                                                         String optionToBeSelected,
+                                                         WebElement actionElement,
+                                                         WebElement elementWaitingForClick,
+                                                         WebElement elementWaitingToBeVisible) {
+        System.out.println(XPath);
         return WebElementOptionModel.ModelBuilder
                 .create()
                     .withXPath(XPath)
@@ -254,6 +242,6 @@ public class PageObjectSample {
                     .withActionElement(actionElement)
                     .withElementWaitingForClick(elementWaitingForClick)
                     .withElementWaitingToBeVisible(elementWaitingToBeVisible)
-                    .build();
+                .build();
     }
 }

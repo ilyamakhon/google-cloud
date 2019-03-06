@@ -6,11 +6,21 @@ import java.util.Objects;
 
 public class WebElementOptionModel {
 
+    private SelectType selectType;
+
     private String XPath;
     private String optionToBeSelected;
     private WebElement actionElement;
     private WebElement elementWaitingForClick;
     private WebElement elementWaitingToBeVisible;
+
+    public SelectType getSelectType() {
+        return selectType;
+    }
+
+    public enum SelectType {
+        SELECT_WITH_GROUPS, SELECT_WITHOUT_GROUPS;
+    }
 
     public String getXPath() {
         return XPath;

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e01d8d81-78c9-4502-b723-044c42e287dc" name="Default Changelist" comment="">
+    <list default="true" id="e01d8d81-78c9-4502-b723-044c42e287dc" name="Default Changelist" comment="Builder model addded">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PageObjectSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectSample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bean/WebElementOptionModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bean/WebElementOptionModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjectSample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjectSample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjectTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjectTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,13 +27,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObjectSample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1049">
-              <caret line="209" selection-start-line="209" selection-end-line="209" />
+            <state relative-caret-position="29">
+              <caret line="130" selection-start-line="130" selection-end-line="130" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#7272#7703#0" />
+                <element signature="e#7276#8117#0" />
               </folding>
             </state>
           </provider>
@@ -41,10 +44,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/bean/WebElementOptionModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-272">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="12" selection-end-column="49" />
+            <state relative-caret-position="187">
+              <caret line="99" column="28" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#399#400#0" expanded="true" />
+                <element signature="e#432#433#0" expanded="true" />
                 <element signature="e#350#351#0" expanded="true" />
                 <element signature="e#378#379#0" expanded="true" />
                 <element signature="e#420#421#0" expanded="true" />
@@ -61,22 +66,22 @@
                 <element signature="e#958#959#0" expanded="true" />
                 <element signature="e#1162#1163#0" expanded="true" />
                 <element signature="e#1210#1211#0" expanded="true" />
-                <element signature="e#2700#2701#0" expanded="true" />
-                <element signature="e#2748#2749#0" expanded="true" />
-                <element signature="e#3480#3481#0" expanded="true" />
-                <element signature="e#3515#3516#0" expanded="true" />
+                <element signature="e#2753#2754#0" expanded="true" />
+                <element signature="e#2802#2803#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObjectTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="226">
+              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1052#1053#0" expanded="true" />
+                <element signature="e#1081#1082#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,9 +109,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/test/java/bean/WebElementModel.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObjectTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/bean/WebElementOptionModel.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjectSample.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObjectTest.java" />
       </list>
     </option>
   </component>
@@ -134,7 +139,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,12 +177,13 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551795594901" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551870143098" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -198,21 +203,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.PageObjectTest">
-    <configuration name="PageObjectTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.GoogleCloudTest">
+    <configuration name="GoogleCloudTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="googlecloud" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PageObjectTest" />
+      <option name="MAIN_CLASS_NAME" value="GoogleCloudTest" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PageObjectTest.testProductEstimation" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GoogleCloudTest.testProductEstimation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="googlecloud" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PageObjectTest" />
+      <option name="MAIN_CLASS_NAME" value="GoogleCloudTest" />
       <option name="METHOD_NAME" value="testProductEstimation" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -222,13 +227,13 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.PageObjectTest" />
-      <item itemvalue="TestNG.PageObjectTest.testProductEstimation" />
+      <item itemvalue="TestNG.GoogleCloudTest" />
+      <item itemvalue="TestNG.GoogleCloudTest.testProductEstimation" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PageObjectTest.testProductEstimation" />
-        <item itemvalue="TestNG.PageObjectTest" />
+        <item itemvalue="TestNG.GoogleCloudTest" />
+        <item itemvalue="TestNG.GoogleCloudTest.testProductEstimation" />
       </list>
     </recent_temporary>
   </component>
@@ -246,7 +251,8 @@
       <workItem from="1551425310148" duration="9065000" />
       <workItem from="1551682299985" duration="23105000" />
       <workItem from="1551717881043" duration="6046000" />
-      <workItem from="1551770467783" duration="10981000" />
+      <workItem from="1551770467783" duration="11697000" />
+      <workItem from="1551856619198" duration="8641000" />
     </task>
     <task id="LOCAL-00001" summary="Waiter fixes">
       <created>1551684588862</created>
@@ -283,43 +289,57 @@
       <option name="project" value="LOCAL" />
       <updated>1551794098477</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Builder model addded">
+      <created>1551795651934</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1551795651935</updated>
+    </task>
+    <task id="LOCAL-00007" summary="WebElementOptionModel added">
+      <created>1551856688123</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1551856688123</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.05 at 14h 42m 14s.xml">
-      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
+    <history-entry file="PageObjectTest - 2019.03.06 at 12h 57m 48s.xml">
+      <configuration name="PageObjectTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.05 at 16h 11m 40s.xml">
-      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
+    <history-entry file="PageObjectTest - 2019.03.06 at 12h 58m 58s.xml">
+      <configuration name="PageObjectTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.05 at 16h 12m 30s.xml">
-      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
+    <history-entry file="PageObjectTest - 2019.03.06 at 13h 52m 54s.xml">
+      <configuration name="PageObjectTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.05 at 16h 14m 41s.xml">
-      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
+    <history-entry file="PageObjectTest - 2019.03.06 at 13h 55m 32s.xml">
+      <configuration name="PageObjectTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.05 at 16h 17m 08s.xml">
-      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
+    <history-entry file="PageObjectTest - 2019.03.06 at 13h 56m 05s.xml">
+      <configuration name="PageObjectTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.05 at 16h 18m 01s.xml">
-      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
+    <history-entry file="PageObjectTest - 2019.03.06 at 13h 56m 49s.xml">
+      <configuration name="PageObjectTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.05 at 16h 41m 33s.xml">
-      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
+    <history-entry file="PageObjectTest - 2019.03.06 at 13h 57m 21s.xml">
+      <configuration name="PageObjectTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.05 at 16h 41m 53s.xml">
-      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
+    <history-entry file="PageObjectTest - 2019.03.06 at 13h 57m 48s.xml">
+      <configuration name="PageObjectTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.05 at 16h 51m 17s.xml">
-      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
+    <history-entry file="PageObjectTest - 2019.03.06 at 13h 58m 47s.xml">
+      <configuration name="PageObjectTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PageObjectTest_testProductEstimation - 2019.03.05 at 16h 53m 54s.xml">
-      <configuration name="PageObjectTest.testProductEstimation" configurationId="TestNG" />
+    <history-entry file="PageObjectTest - 2019.03.06 at 13h 59m 20s.xml">
+      <configuration name="PageObjectTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71586000" />
+    <option name="totallyTimeSpent" value="80943000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -332,9 +352,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49590835" visible="true" weight="0.26222494" />
-      <window_info id="Structure" order="1" sideWeight="0.5040917" side_tool="true" visible="true" weight="0.26222494" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4942717" visible="true" weight="0.26528117" />
+      <window_info id="Structure" order="1" sideWeight="0.5057283" side_tool="true" visible="true" weight="0.26528117" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -373,7 +394,9 @@
     <MESSAGE value="Waiter fixes" />
     <MESSAGE value="Model added" />
     <MESSAGE value="Model fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Model fixes" />
+    <MESSAGE value="Builder model addded" />
+    <MESSAGE value="WebElementOptionModel added" />
+    <option name="LAST_COMMIT_MESSAGE" value="WebElementOptionModel added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://D:/work/oracle/java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/System.java" />
@@ -392,22 +415,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjectTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/bean/WebElementOptionModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="12" selection-end-column="49" />
+        <state relative-caret-position="187">
+          <caret line="99" column="28" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
             <element signature="e#350#351#0" expanded="true" />
             <element signature="e#378#379#0" expanded="true" />
             <element signature="e#420#421#0" expanded="true" />
@@ -424,20 +439,32 @@
             <element signature="e#958#959#0" expanded="true" />
             <element signature="e#1162#1163#0" expanded="true" />
             <element signature="e#1210#1211#0" expanded="true" />
-            <element signature="e#2700#2701#0" expanded="true" />
-            <element signature="e#2748#2749#0" expanded="true" />
-            <element signature="e#3480#3481#0" expanded="true" />
-            <element signature="e#3515#3516#0" expanded="true" />
+            <element signature="e#2753#2754#0" expanded="true" />
+            <element signature="e#2802#2803#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObjectSample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1049">
-          <caret line="209" selection-start-line="209" selection-end-line="209" />
+        <state relative-caret-position="29">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#7272#7703#0" />
+            <element signature="e#7276#8117#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1052#1053#0" expanded="true" />
+            <element signature="e#1081#1082#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -13,19 +13,10 @@ import java.util.List;
 import static bean.WebElementOptionModel.SelectType.SELECT_WITHOUT_GROUPS;
 import static bean.WebElementOptionModel.SelectType.SELECT_WITH_GROUPS;
 
-public class PageObjectSample {
+public class EstimationFormPage {
 
     private final WebDriver driver;
     private WebDriverWait wait;
-
-    @FindBy(linkText = "EXPLORE ALL PRODUCTS")
-    private WebElement exploreProductsLink;
-
-    @FindBy(linkText = "SEE PRICING")
-    private WebElement seePricingLink;
-
-    @FindBy(linkText = "Calculators")
-    private WebElement calculatorsLink;
 
     @FindBy(xpath = "//div[@title='Compute Engine']")
     private WebElement computeEngine;
@@ -87,27 +78,12 @@ public class PageObjectSample {
     @FindBy(xpath = "//md-checkbox[@aria-label='Add GPUs']")
     private WebElement addGPUCheckbox;
 
-    public PageObjectSample(WebDriver driver) {
+    public EstimationFormPage(WebDriver driver) {
         this.driver = driver;
-        wait = new WebDriverWait(driver,5);
+        this.wait = new WebDriverWait(driver,5);
     }
 
-    public PageObjectSample exploreProducts() {
-        exploreProductsLink.click();
-        return this;
-    }
-
-    public PageObjectSample seePricing() {
-        seePricingLink.click();
-        return this;
-    }
-
-    public PageObjectSample calculate() {
-        calculatorsLink.click();
-        return this;
-    }
-
-    public PageObjectSample computeEngine() {
+    public EstimationFormPage computeEngine() {
         driver.switchTo().frame("idIframe");
         computeEngine.click();
         return this;
@@ -117,11 +93,11 @@ public class PageObjectSample {
         numberOfInstances.sendKeys(quantity);
     }
 
-    public PageObjectSample checkWhatAreInstancesForEmptiness() {
+    public boolean checkWhatAreInstancesForEmptiness() {
         if (whatAreInstancesFor.getAttribute("value").equals("")) {
-            return this;
+            return true;
         }
-        return null;
+        return false;
     }
 
     public void addGPUs() {
@@ -132,65 +108,65 @@ public class PageObjectSample {
     public void setOperatingSystemAndSoftwareOption(String OSAndSoftwareToBeSelected) {
         selectOption(
                 buildSelectOptionModel(
-                    buildXPath(SELECT_WITHOUT_GROUPS, "select_container_59")
-                    , OSAndSoftwareToBeSelected, selectedOperatingSystemAndSoftware, null, selectOSAndSoftwareContainer
-        ));
+                        buildXPath(SELECT_WITHOUT_GROUPS, "select_container_59")
+                        , OSAndSoftwareToBeSelected, selectedOperatingSystemAndSoftware, null, selectOSAndSoftwareContainer
+                ));
     }
 
     public void setVMClassOption(String VMClassToBeSelected) {
         selectOption(
                 buildSelectOptionModel(
-                    buildXPath(SELECT_WITHOUT_GROUPS, "select_container_63")
-                    , VMClassToBeSelected, selectedVMClass,null, selectVMClassContainer
-        ));
+                        buildXPath(SELECT_WITHOUT_GROUPS, "select_container_63")
+                        , VMClassToBeSelected, selectedVMClass,null, selectVMClassContainer
+                ));
     }
 
     public void setInstanceTypeOption(String instanceToBeSelected) {
         selectOption(
                 buildSelectOptionModel(
-                    buildXPath(SELECT_WITH_GROUPS, "select_container_94")
-                    , instanceToBeSelected, selectedInstanceType, null, selectInstanceTypeContainer
-        ));
+                        buildXPath(SELECT_WITH_GROUPS, "select_container_94")
+                        , instanceToBeSelected, selectedInstanceType, null, selectInstanceTypeContainer
+                ));
     }
 
     public void setNumberOfGPUsOption(String numberOfGPUsToBeSelected) {
         selectOption(
                 buildSelectOptionModel(
-                    buildXPath(SELECT_WITHOUT_GROUPS, "select_container_330")
-                    , numberOfGPUsToBeSelected, selectedNumberOfGPUs, null, selectNumberOfGPUsContainer
-        ));
+                        buildXPath(SELECT_WITHOUT_GROUPS, "select_container_330")
+                        , numberOfGPUsToBeSelected, selectedNumberOfGPUs, null, selectNumberOfGPUsContainer
+                ));
     }
 
     public void setGPUTypeOption(String GPUTypeToBeSelected){
         selectOption(
                 buildSelectOptionModel(
-                    buildXPath(SELECT_WITHOUT_GROUPS, "select_container_332")
-                    , GPUTypeToBeSelected, selectedGPUType, null, selectGPUTypeContainer
-        ));
+                        buildXPath(SELECT_WITHOUT_GROUPS, "select_container_332")
+                        , GPUTypeToBeSelected, selectedGPUType, null, selectGPUTypeContainer
+                ));
     }
 
     public void setLocalSSDOption(String localSSDToBeSelected) {
         selectOption(
                 buildSelectOptionModel(
-                    buildXPath(SELECT_WITHOUT_GROUPS, "select_container_96")
-                    , localSSDToBeSelected, selectedLocalSSD, null, selectLocalSSDContainer
-        ));
+                        buildXPath(SELECT_WITHOUT_GROUPS, "select_container_96")
+                        , localSSDToBeSelected, selectedLocalSSD, null, selectLocalSSDContainer
+                ));
     }
 
     public void setDataCenterLocationOption(String dataCenterLocationToBeSelected) {
         selectOption(
                 buildSelectOptionModel(
-                    buildXPath(SELECT_WITHOUT_GROUPS, "select_container_98")
-                    , dataCenterLocationToBeSelected, selectedDataCenterLocation, null, selectDataCenterLocationContainer
-        ));
+                        buildXPath(SELECT_WITHOUT_GROUPS, "select_container_98")
+                        , dataCenterLocationToBeSelected, selectedDataCenterLocation, null, selectDataCenterLocationContainer
+                ));
     }
 
     public void setCommitmentTermOption(String commitmentTermToBeSelected) {
         selectOption(
                 buildSelectOptionModel(
-                    buildXPath(SELECT_WITHOUT_GROUPS, "select_container_103"),
-                    commitmentTermToBeSelected, null, selectedCommitmentTerm, selectCommitmentTermContainer
-        ));
+                        buildXPath(SELECT_WITHOUT_GROUPS, "select_container_103"),
+                        commitmentTermToBeSelected, null, selectedCommitmentTerm, selectCommitmentTermContainer
+                ));
     }
 
 
@@ -234,14 +210,13 @@ public class PageObjectSample {
                                                          WebElement actionElement,
                                                          WebElement elementWaitingForClick,
                                                          WebElement elementWaitingToBeVisible) {
-        System.out.println(XPath);
         return WebElementOptionModel.ModelBuilder
                 .create()
-                    .withXPath(XPath)
-                    .withOptionToBeSelected(optionToBeSelected)
-                    .withActionElement(actionElement)
-                    .withElementWaitingForClick(elementWaitingForClick)
-                    .withElementWaitingToBeVisible(elementWaitingToBeVisible)
+                .withXPath(XPath)
+                .withOptionToBeSelected(optionToBeSelected)
+                .withActionElement(actionElement)
+                .withElementWaitingForClick(elementWaitingForClick)
+                .withElementWaitingToBeVisible(elementWaitingToBeVisible)
                 .build();
     }
 }

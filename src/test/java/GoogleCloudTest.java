@@ -5,7 +5,8 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import pages.PageObjectSample;
+import pages.StartPage;
+import steps.Steps;
 
 import java.util.concurrent.TimeUnit;
 
@@ -16,6 +17,7 @@ public class GoogleCloudTest {
     private static final String BASE_URL = "https://cloud.google.com/";
 
     private WebDriver driver = null;
+    private Steps steps;
 
     @BeforeClass
     public void setUp() {
@@ -41,7 +43,7 @@ public class GoogleCloudTest {
         String dataCenterLocation = "Frankfurt (europe-west3)";
         String commitmentTerm = "1 Year";
 
-        PageObjectSample page = PageFactory.initElements(driver, PageObjectSample.class);
+        StartPage page = PageFactory.initElements(driver, StartPage.class);
 
         page.exploreProducts()
             .seePricing()
@@ -49,7 +51,7 @@ public class GoogleCloudTest {
             .computeEngine()
             .setNumberOfInstances("4");
 
-        Assert.assertNotNull(page.checkWhatAreInstancesForEmptiness(), "'What are instances for' input is not empty!");
+//        Assert.assertTrue(page.checkWhatAreInstancesForEmptiness(), "'What are instances for' input is not empty!");
 
         page.setOperatingSystemAndSoftwareOption(operatingSystemAndSoftware);
 //

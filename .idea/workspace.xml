@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e01d8d81-78c9-4502-b723-044c42e287dc" name="Default Changelist" comment="Builder model addded">
+    <list default="true" id="e01d8d81-78c9-4502-b723-044c42e287dc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/EstimationFormPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/PricingPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ProductsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/steps/Steps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjectSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectSample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bean/WebElementOptionModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bean/WebElementOptionModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjectSample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjectSample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GoogleCloudTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GoogleCloudTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PageObjectSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/StartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjectSample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjectTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,14 +32,66 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjectSample.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/StartPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="130" selection-start-line="130" selection-end-line="130" />
+            <state relative-caret-position="160">
+              <caret line="104" column="4" selection-start-line="104" selection-start-column="4" selection-end-line="107" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#7272#7703#0" />
-                <element signature="e#7276#8117#0" />
+                <element signature="e#3244#3245#0" expanded="true" />
+                <element signature="e#3296#3297#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/ProductsPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" selection-start-line="15" selection-end-line="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/EstimationFormPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1292">
+              <caret line="94" selection-start-line="94" selection-end-line="94" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2724#2725#0" expanded="true" />
+                <element signature="e#2776#2777#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/steps/Steps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="709">
+              <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#743#744#0" expanded="true" />
+                <element signature="e#772#773#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/PricingPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,11 +129,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PageObjectTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/GoogleCloudTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+            <state relative-caret-position="-335">
+              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1052#1053#0" expanded="true" />
@@ -99,6 +155,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>setElementWaitingToBeVisible</find>
+      <find>System.</find>
+      <find>System</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -112,12 +170,18 @@
         <option value="$PROJECT_DIR$/src/test/java/bean/WebElementOptionModel.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjectSample.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjectTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/StartPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/EstimationFormPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/ProductsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/GoogleCloudTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/PricingPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/Steps.java" />
       </list>
     </option>
   </component>
   <component name="JavaAutoRunManager">
     <enabled-run-configurations>
-      <run-configuration type="TestNG" name="PageObjectTest.testProductEstimation" />
+      <run-configuration type="TestNG" name="GoogleCloudTest.testProductEstimation" />
     </enabled-run-configurations>
   </component>
   <component name="MavenImportPreferences">
@@ -172,6 +236,22 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="bean" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="google-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="google-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="google-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="google-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="steps" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -183,13 +263,18 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551870143098" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551872997462" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pages" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -252,7 +337,7 @@
       <workItem from="1551682299985" duration="23105000" />
       <workItem from="1551717881043" duration="6046000" />
       <workItem from="1551770467783" duration="11697000" />
-      <workItem from="1551856619198" duration="8641000" />
+      <workItem from="1551856619198" duration="12244000" />
     </task>
     <task id="LOCAL-00001" summary="Waiter fixes">
       <created>1551684588862</created>
@@ -303,13 +388,17 @@
       <option name="project" value="LOCAL" />
       <updated>1551856688123</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="XPath builder added">
+      <created>1551870240709</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1551870240709</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PageObjectTest - 2019.03.06 at 12h 57m 48s.xml">
-      <configuration name="PageObjectTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="PageObjectTest - 2019.03.06 at 12h 58m 58s.xml">
       <configuration name="PageObjectTest" configurationId="TestNG" />
     </history-entry>
@@ -337,9 +426,12 @@
     <history-entry file="PageObjectTest - 2019.03.06 at 13h 59m 20s.xml">
       <configuration name="PageObjectTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="GoogleCloudTest - 2019.03.06 at 14h 26m 36s.xml">
+      <configuration name="GoogleCloudTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80943000" />
+    <option name="totallyTimeSpent" value="84546000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -352,10 +444,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4942717" visible="true" weight="0.26528117" />
-      <window_info id="Structure" order="1" sideWeight="0.5057283" side_tool="true" visible="true" weight="0.26528117" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4949608" visible="true" weight="0.26528117" />
+      <window_info id="Structure" order="1" sideWeight="0.5050392" side_tool="true" visible="true" weight="0.26528117" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -363,7 +454,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32922733" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31578946" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31578946" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -396,7 +487,8 @@
     <MESSAGE value="Model fixes" />
     <MESSAGE value="Builder model addded" />
     <MESSAGE value="WebElementOptionModel added" />
-    <option name="LAST_COMMIT_MESSAGE" value="WebElementOptionModel added" />
+    <MESSAGE value="XPath builder added" />
+    <option name="LAST_COMMIT_MESSAGE" value="XPath builder added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://D:/work/oracle/java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/System.java" />
@@ -445,26 +537,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjectSample.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/StartPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="130" selection-start-line="130" selection-end-line="130" />
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/EstimationFormPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1292">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7272#7703#0" />
-            <element signature="e#7276#8117#0" />
+            <element signature="e#2724#2725#0" expanded="true" />
+            <element signature="e#2776#2777#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObjectTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/GoogleCloudTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        <state relative-caret-position="-335">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1052#1053#0" expanded="true" />
             <element signature="e#1081#1082#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/StartPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="104" column="4" selection-start-line="104" selection-start-column="4" selection-end-line="107" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3244#3245#0" expanded="true" />
+            <element signature="e#3296#3297#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/ProductsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/PricingPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/Steps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="709">
+          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
           </folding>
         </state>
       </provider>

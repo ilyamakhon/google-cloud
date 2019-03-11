@@ -3,19 +3,23 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.PageFactory;
 
-public class PricingPage {
+public class PricingPage extends AbstractPage{
 
-    private final WebDriver driver;
-    private WebDriverWait wait;
+    private final String BASE_URL = "https://cloud.google.com/pricing/";
 
     @FindBy(linkText = "Calculators")
     private WebElement calculatorsLink;
 
     public PricingPage(WebDriver driver) {
-        this.driver = driver;
-        this.wait = new WebDriverWait(driver,5);
+        super(driver);
+        PageFactory.initElements(this.driver, this);
+    }
+
+    @Override
+    public void openPage() {
+        driver.navigate().to(BASE_URL);
     }
 
     public PricingPage calculate() {

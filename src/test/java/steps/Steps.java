@@ -1,46 +1,74 @@
 package steps;
 
+import bean.EstimationFormModel;
+import driver.DriverSingleton;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.PageFactory;
+import pages.EstimationFormPage;
 import pages.PricingPage;
 import pages.ProductsPage;
 import pages.StartPage;
 
-import java.util.concurrent.TimeUnit;
-
 public class Steps {
 
-    private static final String WEB_DRIVER_URL = "D:\\work\\webdriver\\chromedriver.exe";
-    private static final String WEB_DRIVER = "webdriver.chrome.driver";
-    private static final String BASE_URL = "https://cloud.google.com/";
-
-    private WebDriver driver = null;
+    private WebDriver driver;
 
     public void start() {
-        System.setProperty(WEB_DRIVER, WEB_DRIVER_URL);
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        driver.manage().window().maximize();
-        driver.get(BASE_URL);
+        driver = DriverSingleton.getDriver();
     }
 
     public void stop() {
-        driver.quit();
+        DriverSingleton.closeDriver();
     }
 
     public void moveToProductsPage() {
-        StartPage startPage = PageFactory.initElements(driver, StartPage.class);
+        StartPage startPage = new StartPage(driver);
+        startPage.openPage();
         startPage.exploreProducts();
     }
 
     public void moveToPricingPage() {
-        ProductsPage productsPage = PageFactory.initElements(driver, ProductsPage.class);
+        ProductsPage productsPage = new ProductsPage(driver);
+        productsPage.openPage();
         productsPage.seePricing();
     }
 
     public void moveToEstimationFormPage() {
-        PricingPage pricingPage = PageFactory.initElements(driver, PricingPage.class);
+        PricingPage pricingPage = new PricingPage(driver);
+        pricingPage.openPage();
         pricingPage.calculate();
+    }
+
+    public void fillForm(EstimationFormModel estimationFormModel) {
+        EstimationFormPage estimationFormPage = new EstimationFormPage(driver);
+        estimationFormPage.openPage();
+
+        estimationFormPage.computeEngine();
+        estimationFormPage.setNumberOfInstances(estimationFormModel.getNumberOfInstances());
+        estimationFormPage.checkWhatAreInstancesForEmptiness();
+        estimationFormPage.setOperatingSystemAndSoftwareOption(estimationFormModel.getOperatingSystemAndSoftware());
+        estimationFormPage.setVMClassOption(estimationFormModel.getVMClass());
+        estimationFormPage.setInstanceTypeOption(estimationFormModel.getInstanceType());
+        estimationFormPage.addGPUs(estimationFormModel.getAddGPU());
+        estimationFormPage.setNumberOfGPUsOption(estimationFormModel.getNumberOfGPUs());
+        estimationFormPage.setGPUTypeOption(estimationFormModel.getGPUType());
+        estimationFormPage.setLocalSSDOption(estimationFormModel.getLocalSSD());
+        estimationFormPage.setDataCenterLocationOption(estimationFormModel.getDataCenterLocation());
+        estimationFormPage.setCommitmentTermOption(estimationFormModel.getCommitmentTerm());
+
+    }
+
+    public void addToEstimate() {
+        EstimationFormPage estimationFormPage = new EstimationFormPage(driver);
+        estimationFormPage.addToEstimate();
+    }
+
+    public void validateEstimation(EstimationFormModel estimationFormModel) {
+        EstimationFormPage estimationFormPage = new EstimationFormPage(driver);
+        estimationFormPage.validateEstimationFields(estimationFormModel);
+    }
+
+    public String getTotalEstimatedCost() {
+        EstimationFormPage estimationFormPage = new EstimationFormPage(driver);
+        return estimationFormPage.getTotalEstimatedCost();
     }
 }

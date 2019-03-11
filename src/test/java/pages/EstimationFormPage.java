@@ -1,10 +1,12 @@
 package pages;
 
+import bean.EstimationFormModel;
 import bean.WebElementOptionModel;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -13,10 +15,10 @@ import java.util.List;
 import static bean.WebElementOptionModel.SelectType.SELECT_WITHOUT_GROUPS;
 import static bean.WebElementOptionModel.SelectType.SELECT_WITH_GROUPS;
 
-public class EstimationFormPage {
+public class EstimationFormPage extends AbstractPage{
 
-    private final WebDriver driver;
     private WebDriverWait wait;
+    private final String BASE_URL = "https://cloud.google.com/products/calculator/";
 
     @FindBy(xpath = "//div[@title='Compute Engine']")
     private WebElement computeEngine;
@@ -78,9 +80,21 @@ public class EstimationFormPage {
     @FindBy(xpath = "//md-checkbox[@aria-label='Add GPUs']")
     private WebElement addGPUCheckbox;
 
+    @FindBy(id = "resultBlock")
+    private  WebElement resultBlock;
+
+    @FindBy(xpath = "//h2[@class='md-title']/b[@class='md-binding']")
+    private WebElement totalEstimatedCost;
+
     public EstimationFormPage(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
+        PageFactory.initElements(this.driver, this);
         this.wait = new WebDriverWait(driver,5);
+    }
+
+    @Override
+    public void openPage() {
+        driver.navigate().to(BASE_URL);
     }
 
     public EstimationFormPage computeEngine() {
@@ -100,9 +114,11 @@ public class EstimationFormPage {
         return false;
     }
 
-    public void addGPUs() {
-        wait.until(ExpectedConditions.elementToBeClickable(addGPUCheckbox));
-        addGPUCheckbox.click();
+    public void addGPUs(String addGPU) {
+        if (addGPU.equals("Yes")) {
+            wait.until(ExpectedConditions.elementToBeClickable(addGPUCheckbox));
+            addGPUCheckbox.click();
+        }
     }
 
     public void setOperatingSystemAndSoftwareOption(String OSAndSoftwareToBeSelected) {
@@ -149,7 +165,7 @@ public class EstimationFormPage {
         selectOption(
                 buildSelectOptionModel(
                         buildXPath(SELECT_WITHOUT_GROUPS, "select_container_96")
-                        , localSSDToBeSelected, selectedLocalSSD, null, selectLocalSSDContainer
+                        , localSSDToBeSelected, selectedLocalSSD, null , selectLocalSSDContainer
                 ));
     }
 
@@ -169,7 +185,21 @@ public class EstimationFormPage {
                 ));
     }
 
+    public void validateEstimationFields(EstimationFormModel estimationFormModel) {
+        wait.until(ExpectedConditions.visibilityOf(resultBlock));
+        List<WebElement> validateEstimationElements = driver.findElements(By.xpath("//md-list-item/div[@class='md-list-item-text ng-binding']"));
+        for (WebElement webElement : validateEstimationElements) {
+            System.out.println(webElement.getText());
+        }
+    }
 
+    public String getTotalEstimatedCost() {
+        return totalEstimatedCost.getText();
+    }
+
+    public void addToEstimate() {
+        driver.findElement(By.xpath("//*[@type='button'][@aria-label='Add to Estimate']")).click();
+    }
 
     private void selectOption(WebElementOptionModel webElementOptionModel) {
         if (webElementOptionModel.getActionElement() != null) {

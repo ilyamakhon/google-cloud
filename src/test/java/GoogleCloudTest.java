@@ -1,14 +1,10 @@
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.PageFactory;
+import dp.DP;
+import bean.EstimationFormModel;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pages.StartPage;
 import steps.Steps;
-
-import java.util.concurrent.TimeUnit;
 
 public class GoogleCloudTest {
 
@@ -16,64 +12,27 @@ public class GoogleCloudTest {
     private static final String WEB_DRIVER = "webdriver.chrome.driver";
     private static final String BASE_URL = "https://cloud.google.com/";
 
-    private WebDriver driver = null;
     private Steps steps;
 
-    @BeforeClass
+    @BeforeMethod
     public void setUp() {
-        System.setProperty(WEB_DRIVER, WEB_DRIVER_URL);
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        driver.manage().window().maximize();
-        driver.get(BASE_URL);
+        steps = new Steps();
+        steps.start();
     }
 
-    @AfterClass
+    @AfterMethod
     public void afterClass() {
-        driver.quit();
+        steps.stop();
     }
 
-    @Test
-    public void testProductEstimation() {
-        String operatingSystemAndSoftware = "Free: Debian, CentOS, CoreOS, Ubuntu, or other User Provided OS";
-        String VMClass = "Regular";
-        String instanceType = "n1-standard-8    (vCPUs: 8, RAM: 30 GB)";
-        String GPUType = "NVIDIA Tesla V100";
-        String localSSD = "2x375 GB";
-        String dataCenterLocation = "Frankfurt (europe-west3)";
-        String commitmentTerm = "1 Year";
+    @Test(dataProvider = "dataProvider", dataProviderClass = DP.class)
+    public void testProductEstimation(EstimationFormModel estimationFormModel) {
+        steps.moveToProductsPage();
+        steps.moveToPricingPage();
+        steps.moveToEstimationFormPage();
+        steps.fillForm(estimationFormModel);
+        steps.addToEstimate();
 
-        StartPage page = PageFactory.initElements(driver, StartPage.class);
-
-        page.exploreProducts()
-            .seePricing()
-            .calculate()
-            .computeEngine()
-            .setNumberOfInstances("4");
-
-//        Assert.assertTrue(page.checkWhatAreInstancesForEmptiness(), "'What are instances for' input is not empty!");
-
-        page.setOperatingSystemAndSoftwareOption(operatingSystemAndSoftware);
-//
-//        Assert.assertEquals(page.getOperatingSystemAndSoftware(), operatingSystemAndSoftware, "Operating system and software does not match requested -> " + operatingSystemAndSoftware);
-//
-        page.setVMClassOption(VMClass);
-//
-//        Assert.assertEquals(page.getVMClass(), VMClass, "VM Class does not match requested -> " + VMClass);
-
-        page.setInstanceTypeOption(instanceType);
-//
-        page.addGPUs();
-//
-        page.setNumberOfGPUsOption("1");
-//
-        page.setGPUTypeOption(GPUType);
-
-        page.setLocalSSDOption(localSSD);
-
-        page.setDataCenterLocationOption(dataCenterLocation);
-
-        page.setCommitmentTermOption(commitmentTerm);
-
+        Assert.assertEquals(steps.getTotalEstimatedCost(), estimationFormModel.getTotalEstimationCost());
     }
 }

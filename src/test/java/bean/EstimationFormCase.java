@@ -2,7 +2,7 @@ package bean;
 
 import java.util.Objects;
 
-public class EstimationFormModel {
+public class EstimationFormCase {
     private String numberOfInstances;
     private String operatingSystemAndSoftware;
     private String VMClass;
@@ -16,16 +16,16 @@ public class EstimationFormModel {
     private String totalEstimationCost;
 
     
-    public EstimationFormModel(String numberOfInstances,
-                               String operatingSystemAndSoftware,
-                               String VMClass,
-                               String instanceType,
-                               String addGPU,
-                               String numberOfGPUs,
-                               String GPUType,
-                               String localSSD,
-                               String dataCenterLocation,
-                               String commitmentTerm) {
+    public EstimationFormCase(String numberOfInstances,
+                              String operatingSystemAndSoftware,
+                              String VMClass,
+                              String instanceType,
+                              String addGPU,
+                              String numberOfGPUs,
+                              String GPUType,
+                              String localSSD,
+                              String dataCenterLocation,
+                              String commitmentTerm) {
         this.numberOfInstances = numberOfInstances;
         this.operatingSystemAndSoftware = operatingSystemAndSoftware;
         this.VMClass = VMClass;
@@ -130,7 +130,7 @@ public class EstimationFormModel {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        EstimationFormModel that = (EstimationFormModel) o;
+        EstimationFormCase that = (EstimationFormCase) o;
         return Objects.equals(numberOfInstances, that.numberOfInstances) &&
                 Objects.equals(operatingSystemAndSoftware, that.operatingSystemAndSoftware) &&
                 Objects.equals(VMClass, that.VMClass) &&
@@ -151,7 +151,7 @@ public class EstimationFormModel {
 
     @Override
     public String toString() {
-        return "EstimationFormModel{" +
+        return "EstimationFormCase{" +
                 "numberOfInstances='" + numberOfInstances + '\'' +
                 ", operatingSystemAndSoftware='" + operatingSystemAndSoftware + '\'' +
                 ", VMClass='" + VMClass + '\'' +

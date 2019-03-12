@@ -1,8 +1,8 @@
 package csvparser;
 
+import bean.EstimationFormCase;
 import bean.EstimationFormCasesWrapper;
-import bean.EstimationFormModel;
-import bean.ValidationFormModel;
+import bean.ValidationFormCase;
 import bean.ValidationFormWrapper;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
@@ -47,14 +47,14 @@ public class CSVParserImpl implements CSVParser {
     }
 
     @Override
-    public HashMap<String, EstimationFormModel> parseEstimationCases() {
+    public HashMap<String, EstimationFormCase> parseEstimationCases() {
         try {
             BufferedReader reader = Files.newBufferedReader(Paths.get(ESTIMATION_CASES_URL));
             org.apache.commons.csv.CSVParser csvParser = new org.apache.commons.csv.CSVParser(reader, CSVFormat.DEFAULT.withHeader(ESTIMATION_CASES_HEADERS).withFirstRecordAsHeader());
 
             for (CSVRecord csvRecord : csvParser) {
 
-                EstimationFormModel estimationFormModel = new EstimationFormModel(
+                EstimationFormCase estimationFormCase = new EstimationFormCase(
                         csvRecord.get("Number of instances"),
                         csvRecord.get("Operating system and software"),
                         csvRecord.get("VM Class"),
@@ -67,7 +67,7 @@ public class CSVParserImpl implements CSVParser {
                         csvRecord.get("Commitment term")
                 );
 
-                estimationFormCasesWrapper.addEstimationCase(csvRecord.get("estimationCaseID"), estimationFormModel);
+                estimationFormCasesWrapper.addEstimationCase(csvRecord.get("estimationCaseID"), estimationFormCase);
             }
 
         } catch (IOException e) {
@@ -78,13 +78,13 @@ public class CSVParserImpl implements CSVParser {
     }
 
     @Override
-    public HashMap<String, ValidationFormModel> parseValidationFromCases() {
+    public HashMap<String, ValidationFormCase> parseValidationFromCases() {
         try {
             BufferedReader reader = Files.newBufferedReader(Paths.get(VALIDATION_CASES_URL));
             org.apache.commons.csv.CSVParser csvParser = new org.apache.commons.csv.CSVParser(reader, CSVFormat.DEFAULT.withHeader(VALIDATION_FORM_HEADERS).withFirstRecordAsHeader());
 
             for (CSVRecord csvRecord : csvParser) {
-                ValidationFormModel validationFormModel = new ValidationFormModel(
+                ValidationFormCase validationFormCase = new ValidationFormCase(
                         csvRecord.get("VM class"),
                         csvRecord.get("Instance type"),
                         csvRecord.get("Region"),
@@ -93,7 +93,7 @@ public class CSVParserImpl implements CSVParser {
                         csvRecord.get("Total estimated cost")
                 );
 
-                validationFormWrapper.addValidationFormCase(csvRecord.get("validationFormCaseID"), validationFormModel);
+                validationFormWrapper.addValidationFormCase(csvRecord.get("validationFormCaseID"), validationFormCase);
             }
 
         } catch (IOException e) {

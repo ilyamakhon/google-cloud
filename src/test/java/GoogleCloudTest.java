@@ -1,5 +1,5 @@
-import bean.EstimationFormModel;
-import bean.ValidationFormModel;
+import bean.EstimationFormCase;
+import bean.ValidationFormCase;
 import dp.DP;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -22,17 +22,17 @@ public class GoogleCloudTest {
     }
 
     @Test(dataProvider = "dataProvider", dataProviderClass = DP.class)
-    public void testProductEstimation(EstimationFormModel estimationFormModel) {
+    public void testProductEstimation(EstimationFormCase estimationFormCase) {
         steps.moveToProductsPage();
         steps.moveToPricingPage();
         steps.moveToEstimationFormPage();
-        steps.fillForm(estimationFormModel);
+        steps.fillForm(estimationFormCase);
         steps.addToEstimate();
     }
 
     @Test(dataProvider = "dataProvider", dataProviderClass = DP.class, dependsOnMethods = "testProductEstimation")
-    public void testEstimationFormValidation(ValidationFormModel validationFormModel) {
-        Assert.assertTrue(steps.validateEstimation(validationFormModel));
-        Assert.assertTrue(steps.getTotalEstimatedCost(validationFormModel));
+    public void testEstimationFormValidation(ValidationFormCase validationFormCase) {
+        Assert.assertTrue(steps.validateEstimation(validationFormCase));
+        Assert.assertTrue(steps.getTotalEstimatedCost(validationFormCase));
     }
 }

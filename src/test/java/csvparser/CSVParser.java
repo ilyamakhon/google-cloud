@@ -1,7 +1,7 @@
 package csvparser;
 
-import bean.EstimationFormModel;
-import bean.ValidationFormModel;
+import bean.EstimationFormCase;
+import bean.ValidationFormCase;
 
 import java.util.HashMap;
 
@@ -11,7 +11,7 @@ public interface CSVParser {
         return CSVParserImpl.getInstance();
     }
 
-    HashMap<String, EstimationFormModel> parseEstimationCases();
+    HashMap<String, EstimationFormCase> parseEstimationCases();
 
-    HashMap<String, ValidationFormModel> parseValidationFromCases();
+    HashMap<String, ValidationFormCase> parseValidationFromCases();
 }

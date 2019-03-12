@@ -1,15 +1,13 @@
 package steps;
 
-import bean.EstimationFormModel;
-import bean.ValidationFormModel;
+import bean.EstimationFormCase;
+import bean.ValidationFormCase;
 import driver.DriverSingleton;
 import org.openqa.selenium.WebDriver;
 import pages.EstimationFormPage;
 import pages.PricingPage;
 import pages.ProductsPage;
 import pages.StartPage;
-
-import java.lang.invoke.VolatileCallSite;
 
 public class Steps {
 
@@ -41,22 +39,22 @@ public class Steps {
         pricingPage.calculate();
     }
 
-    public void fillForm(EstimationFormModel estimationFormModel) {
+    public void fillForm(EstimationFormCase estimationFormCase) {
         EstimationFormPage estimationFormPage = new EstimationFormPage(driver);
         estimationFormPage.openPage();
 
         estimationFormPage.computeEngine();
-        estimationFormPage.setNumberOfInstances(estimationFormModel.getNumberOfInstances());
+        estimationFormPage.setNumberOfInstances(estimationFormCase.getNumberOfInstances());
         estimationFormPage.checkWhatAreInstancesForEmptiness();
-        estimationFormPage.setOperatingSystemAndSoftwareOption(estimationFormModel.getOperatingSystemAndSoftware());
-        estimationFormPage.setVMClassOption(estimationFormModel.getVMClass());
-        estimationFormPage.setInstanceTypeOption(estimationFormModel.getInstanceType());
-        estimationFormPage.addGPUs(estimationFormModel.getAddGPU());
-        estimationFormPage.setNumberOfGPUsOption(estimationFormModel.getNumberOfGPUs());
-        estimationFormPage.setGPUTypeOption(estimationFormModel.getGPUType());
-        estimationFormPage.setLocalSSDOption(estimationFormModel.getLocalSSD());
-        estimationFormPage.setDataCenterLocationOption(estimationFormModel.getDataCenterLocation());
-        estimationFormPage.setCommitmentTermOption(estimationFormModel.getCommitmentTerm());
+        estimationFormPage.setOperatingSystemAndSoftwareOption(estimationFormCase.getOperatingSystemAndSoftware());
+        estimationFormPage.setVMClassOption(estimationFormCase.getVMClass());
+        estimationFormPage.setInstanceTypeOption(estimationFormCase.getInstanceType());
+        estimationFormPage.addGPUs(estimationFormCase.getAddGPU());
+        estimationFormPage.setNumberOfGPUsOption(estimationFormCase.getNumberOfGPUs());
+        estimationFormPage.setGPUTypeOption(estimationFormCase.getGPUType());
+        estimationFormPage.setLocalSSDOption(estimationFormCase.getLocalSSD());
+        estimationFormPage.setDataCenterLocationOption(estimationFormCase.getDataCenterLocation());
+        estimationFormPage.setCommitmentTermOption(estimationFormCase.getCommitmentTerm());
 
     }
 
@@ -65,13 +63,13 @@ public class Steps {
         estimationFormPage.addToEstimate();
     }
 
-    public boolean validateEstimation(ValidationFormModel validationFormModel) {
+    public boolean validateEstimation(ValidationFormCase validationFormCase) {
         EstimationFormPage estimationFormPage = new EstimationFormPage(driver);
-        return estimationFormPage.validateEstimationFields(validationFormModel);
+        return estimationFormPage.validateEstimationFields(validationFormCase);
     }
 
-    public boolean getTotalEstimatedCost(ValidationFormModel validationFormModel) {
+    public boolean getTotalEstimatedCost(ValidationFormCase validationFormCase) {
         EstimationFormPage estimationFormPage = new EstimationFormPage(driver);
-        return estimationFormPage.getTotalEstimatedCost().contains(validationFormModel.getTotalEstimatedCost());
+        return estimationFormPage.getTotalEstimatedCost().contains(validationFormCase.getTotalEstimatedCost());
     }
 }

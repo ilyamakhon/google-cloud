@@ -2,7 +2,7 @@ package bean;
 
 import java.util.Objects;
 
-public class ValidationFormModel {
+public class ValidationFormCase {
 
     private String VMClass;
     private String instanceType;
@@ -11,7 +11,7 @@ public class ValidationFormModel {
     private String commitmentTerm;
     private String totalEstimatedCost;
 
-    public ValidationFormModel(String VMClass, String instanceType, String region, String totalAvailableLocalSSDSpace, String commitmentTerm, String totalEstimationCost) {
+    public ValidationFormCase(String VMClass, String instanceType, String region, String totalAvailableLocalSSDSpace, String commitmentTerm, String totalEstimationCost) {
         this.VMClass = VMClass;
         this.instanceType = instanceType;
         this.region = region;
@@ -72,7 +72,7 @@ public class ValidationFormModel {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        ValidationFormModel that = (ValidationFormModel) o;
+        ValidationFormCase that = (ValidationFormCase) o;
         return Objects.equals(VMClass, that.VMClass) &&
                 Objects.equals(instanceType, that.instanceType) &&
                 Objects.equals(region, that.region) &&
@@ -88,7 +88,7 @@ public class ValidationFormModel {
 
     @Override
     public String toString() {
-        return "ValidationFormModel{" +
+        return "ValidationFormCase{" +
                 "VMClass='" + VMClass + '\'' +
                 ", instanceType='" + instanceType + '\'' +
                 ", region='" + region + '\'' +

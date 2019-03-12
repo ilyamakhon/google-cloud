@@ -1,7 +1,7 @@
 package dp;
 
-import bean.EstimationFormModel;
-import bean.ValidationFormModel;
+import bean.EstimationFormCase;
+import bean.ValidationFormCase;
 import csvparser.CSVParser;
 import org.testng.annotations.DataProvider;
 
@@ -14,21 +14,19 @@ public class DP {
 
     @DataProvider
     public Object[][] dataProvider(Method method) {
-        HashMap<String, EstimationFormModel> estimationFormCases = csvParser.parseEstimationCases();
-        HashMap<String, ValidationFormModel> validationFormModelCases = csvParser.parseValidationFromCases();
+        HashMap<String, EstimationFormCase> estimationFormCases = csvParser.parseEstimationCases();
+        HashMap<String, ValidationFormCase> validationFormModelCases = csvParser.parseValidationFromCases();
 
         switch (method.getName()) {
             case "testProductEstimation":
                 return new Object[][]{
-                        {
-                            estimationFormCases.get("1")
-                        }
+                        { estimationFormCases.get("1") },
+                        { estimationFormCases.get("2") }
                 };
             case "testEstimationFormValidation":
                 return new Object[][] {
-                        {
-                            validationFormModelCases.get("1")
-                        }
+                        { validationFormModelCases.get("1") },
+                        { validationFormModelCases.get("2") }
                 };
         }
         return new Object[][]{};

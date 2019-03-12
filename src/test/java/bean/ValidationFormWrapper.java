@@ -3,24 +3,24 @@ package bean;
 import java.util.HashMap;
 
 public class ValidationFormWrapper {
-    private HashMap<String, ValidationFormModel> validationFormCases = new HashMap<>();
+    private HashMap<String, ValidationFormCase> validationFormCases = new HashMap<>();
 
     public ValidationFormWrapper() {
     }
 
-    public ValidationFormWrapper(HashMap<String, ValidationFormModel> validationFormCases) {
+    public ValidationFormWrapper(HashMap<String, ValidationFormCase> validationFormCases) {
         this.validationFormCases = validationFormCases;
     }
 
-    public HashMap<String, ValidationFormModel> getValidationFormCases() {
+    public HashMap<String, ValidationFormCase> getValidationFormCases() {
         return validationFormCases;
     }
 
-    public void setValidationFormCases(HashMap<String, ValidationFormModel> validationFormCases) {
+    public void setValidationFormCases(HashMap<String, ValidationFormCase> validationFormCases) {
         this.validationFormCases = validationFormCases;
     }
 
-    public void addValidationFormCase(String validationFormCaseID, ValidationFormModel validationFormModel) {
-        validationFormCases.put(validationFormCaseID, validationFormModel);
+    public void addValidationFormCase(String validationFormCaseID, ValidationFormCase validationFormCase) {
+        validationFormCases.put(validationFormCaseID, validationFormCase);
     }
 }

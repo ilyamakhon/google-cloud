@@ -1,6 +1,6 @@
 package pages;
 
-import bean.ValidationFormModel;
+import bean.ValidationFormCase;
 import bean.WebElementOptionModel;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -186,16 +186,16 @@ public class EstimationFormPage extends AbstractPage{
                 ));
     }
 
-    public boolean validateEstimationFields(ValidationFormModel validationFormModel) {
+    public boolean validateEstimationFields(ValidationFormCase validationFormCase) {
         int formValidation = 0;
         wait.until(ExpectedConditions.visibilityOf(resultBlock));
         List<WebElement> validateEstimationElements = driver.findElements(By.xpath("//md-list-item/div[@class='md-list-item-text ng-binding']"));
         for (WebElement webElement : validateEstimationElements) {
-            if ( webElement.getText().contains(validationFormModel.getVMClass()) ||
-                 webElement.getText().contains(validationFormModel.getInstanceType()) ||
-                 webElement.getText().contains(validationFormModel.getRegion()) ||
-                 webElement.getText().contains(validationFormModel.getTotalAvailableLocalSSDSpace()) ||
-                 webElement.getText().contains(validationFormModel.getCommitmentTerm())) {
+            if ( webElement.getText().contains(validationFormCase.getVMClass()) ||
+                 webElement.getText().contains(validationFormCase.getInstanceType()) ||
+                 webElement.getText().contains(validationFormCase.getRegion()) ||
+                 webElement.getText().contains(validationFormCase.getTotalAvailableLocalSSDSpace()) ||
+                 webElement.getText().contains(validationFormCase.getCommitmentTerm())) {
                 formValidation++;
             }
         }

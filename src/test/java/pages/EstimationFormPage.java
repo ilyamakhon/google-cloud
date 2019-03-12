@@ -1,6 +1,6 @@
 package pages;
 
-import bean.EstimationFormModel;
+import bean.ValidationFormModel;
 import bean.WebElementOptionModel;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -19,6 +19,7 @@ public class EstimationFormPage extends AbstractPage{
 
     private WebDriverWait wait;
     private final String BASE_URL = "https://cloud.google.com/products/calculator/";
+
 
     @FindBy(xpath = "//div[@title='Compute Engine']")
     private WebElement computeEngine;
@@ -83,7 +84,7 @@ public class EstimationFormPage extends AbstractPage{
     @FindBy(id = "resultBlock")
     private  WebElement resultBlock;
 
-    @FindBy(xpath = "//h2[@class='md-title']/b[@class='md-binding']")
+    @FindBy(xpath = "//h2[@class='md-title']/b[@class='ng-binding']")
     private WebElement totalEstimatedCost;
 
     public EstimationFormPage(WebDriver driver) {
@@ -185,12 +186,21 @@ public class EstimationFormPage extends AbstractPage{
                 ));
     }
 
-    public void validateEstimationFields(EstimationFormModel estimationFormModel) {
+    public boolean validateEstimationFields(ValidationFormModel validationFormModel) {
+        int formValidation = 0;
         wait.until(ExpectedConditions.visibilityOf(resultBlock));
         List<WebElement> validateEstimationElements = driver.findElements(By.xpath("//md-list-item/div[@class='md-list-item-text ng-binding']"));
         for (WebElement webElement : validateEstimationElements) {
-            System.out.println(webElement.getText());
+            if ( webElement.getText().contains(validationFormModel.getVMClass()) ||
+                 webElement.getText().contains(validationFormModel.getInstanceType()) ||
+                 webElement.getText().contains(validationFormModel.getRegion()) ||
+                 webElement.getText().contains(validationFormModel.getTotalAvailableLocalSSDSpace()) ||
+                 webElement.getText().contains(validationFormModel.getCommitmentTerm())) {
+                formValidation++;
+            }
         }
+        System.out.println(formValidation);
+        return formValidation == 5;
     }
 
     public String getTotalEstimatedCost() {

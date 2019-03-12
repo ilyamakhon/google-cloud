@@ -1,12 +1,15 @@
 package steps;
 
 import bean.EstimationFormModel;
+import bean.ValidationFormModel;
 import driver.DriverSingleton;
 import org.openqa.selenium.WebDriver;
 import pages.EstimationFormPage;
 import pages.PricingPage;
 import pages.ProductsPage;
 import pages.StartPage;
+
+import java.lang.invoke.VolatileCallSite;
 
 public class Steps {
 
@@ -62,13 +65,13 @@ public class Steps {
         estimationFormPage.addToEstimate();
     }
 
-    public void validateEstimation(EstimationFormModel estimationFormModel) {
+    public boolean validateEstimation(ValidationFormModel validationFormModel) {
         EstimationFormPage estimationFormPage = new EstimationFormPage(driver);
-        estimationFormPage.validateEstimationFields(estimationFormModel);
+        return estimationFormPage.validateEstimationFields(validationFormModel);
     }
 
-    public String getTotalEstimatedCost() {
+    public boolean getTotalEstimatedCost(ValidationFormModel validationFormModel) {
         EstimationFormPage estimationFormPage = new EstimationFormPage(driver);
-        return estimationFormPage.getTotalEstimatedCost();
+        return estimationFormPage.getTotalEstimatedCost().contains(validationFormModel.getTotalEstimatedCost());
     }
 }

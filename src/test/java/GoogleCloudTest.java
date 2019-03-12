@@ -1,26 +1,22 @@
-import dp.DP;
 import bean.EstimationFormModel;
+import bean.ValidationFormModel;
+import dp.DP;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import steps.Steps;
 
 public class GoogleCloudTest {
-
-    private static final String WEB_DRIVER_URL = "D:\\work\\webdriver\\chromedriver.exe";
-    private static final String WEB_DRIVER = "webdriver.chrome.driver";
-    private static final String BASE_URL = "https://cloud.google.com/";
-
     private Steps steps;
 
-    @BeforeMethod
+    @BeforeClass
     public void setUp() {
         steps = new Steps();
         steps.start();
     }
 
-    @AfterMethod
+    @AfterClass
     public void afterClass() {
         steps.stop();
     }
@@ -32,7 +28,11 @@ public class GoogleCloudTest {
         steps.moveToEstimationFormPage();
         steps.fillForm(estimationFormModel);
         steps.addToEstimate();
+    }
 
-        Assert.assertEquals(steps.getTotalEstimatedCost(), estimationFormModel.getTotalEstimationCost());
+    @Test(dataProvider = "dataProvider", dataProviderClass = DP.class, dependsOnMethods = "testProductEstimation")
+    public void testEstimationFormValidation(ValidationFormModel validationFormModel) {
+        Assert.assertTrue(steps.validateEstimation(validationFormModel));
+        Assert.assertTrue(steps.getTotalEstimatedCost(validationFormModel));
     }
 }

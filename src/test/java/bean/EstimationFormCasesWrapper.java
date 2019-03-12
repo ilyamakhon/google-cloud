@@ -13,8 +13,8 @@ public class EstimationFormCasesWrapper {
         this.estimationFormCases = estimationFormCases;
     }
 
-    public void addEstimationCase(String caseID, EstimationFormModel estimationFormModel) {
-        estimationFormCases.put(caseID, estimationFormModel);
+    public void addEstimationCase(String estimationCaseID, EstimationFormModel estimationFormModel) {
+        estimationFormCases.put(estimationCaseID, estimationFormModel);
     }
 
     public HashMap<String, EstimationFormModel> getEstimationFormCases() {

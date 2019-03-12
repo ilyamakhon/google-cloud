@@ -25,8 +25,7 @@ public class EstimationFormModel {
                                String GPUType,
                                String localSSD,
                                String dataCenterLocation,
-                               String commitmentTerm,
-                               String totalEstimationCost) {
+                               String commitmentTerm) {
         this.numberOfInstances = numberOfInstances;
         this.operatingSystemAndSoftware = operatingSystemAndSoftware;
         this.VMClass = VMClass;
@@ -37,7 +36,6 @@ public class EstimationFormModel {
         this.localSSD = localSSD;
         this.dataCenterLocation = dataCenterLocation;
         this.commitmentTerm = commitmentTerm;
-        this.totalEstimationCost = totalEstimationCost;
     }
 
     public String getNumberOfInstances() {
@@ -120,11 +118,11 @@ public class EstimationFormModel {
         this.commitmentTerm = commitmentTerm;
     }
 
-    public String getTotalEstimationCost() {
+    public String getTotalEstimatedCost() {
         return totalEstimationCost;
     }
 
-    public void setTotalEstimationCost(String totalEstimationCost) {
+    public void setTotalEstimatedCost(String totalEstimationCost) {
         this.totalEstimationCost = totalEstimationCost;
     }
 

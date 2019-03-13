@@ -115,11 +115,9 @@ public class EstimationFormPage extends AbstractPage{
         return false;
     }
 
-    public void addGPUs(String addGPU) {
-        if (addGPU.equals("Yes")) {
-            wait.until(ExpectedConditions.elementToBeClickable(addGPUCheckbox));
-            addGPUCheckbox.click();
-        }
+    public void addGPUs() {
+        wait.until(ExpectedConditions.elementToBeClickable(addGPUCheckbox));
+        addGPUCheckbox.click();
     }
 
     public void setOperatingSystemAndSoftwareOption(String OSAndSoftwareToBeSelected) {

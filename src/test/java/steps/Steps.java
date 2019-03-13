@@ -41,7 +41,6 @@ public class Steps {
 
     public void fillForm(EstimationFormCase estimationFormCase) {
         EstimationFormPage estimationFormPage = new EstimationFormPage(driver);
-        estimationFormPage.openPage();
 
         estimationFormPage.computeEngine();
         estimationFormPage.setNumberOfInstances(estimationFormCase.getNumberOfInstances());
@@ -49,13 +48,18 @@ public class Steps {
         estimationFormPage.setOperatingSystemAndSoftwareOption(estimationFormCase.getOperatingSystemAndSoftware());
         estimationFormPage.setVMClassOption(estimationFormCase.getVMClass());
         estimationFormPage.setInstanceTypeOption(estimationFormCase.getInstanceType());
-        estimationFormPage.addGPUs(estimationFormCase.getAddGPU());
-        estimationFormPage.setNumberOfGPUsOption(estimationFormCase.getNumberOfGPUs());
-        estimationFormPage.setGPUTypeOption(estimationFormCase.getGPUType());
-        estimationFormPage.setLocalSSDOption(estimationFormCase.getLocalSSD());
-        estimationFormPage.setDataCenterLocationOption(estimationFormCase.getDataCenterLocation());
-        estimationFormPage.setCommitmentTermOption(estimationFormCase.getCommitmentTerm());
-
+        if(estimationFormCase.getAddGPU().equals("Yes")) {
+            estimationFormPage.addGPUs();
+            estimationFormPage.setNumberOfGPUsOption(estimationFormCase.getNumberOfGPUs());
+            estimationFormPage.setGPUTypeOption(estimationFormCase.getGPUType());
+            estimationFormPage.setLocalSSDOption(estimationFormCase.getLocalSSD());
+            estimationFormPage.setDataCenterLocationOption(estimationFormCase.getDataCenterLocation());
+            estimationFormPage.setCommitmentTermOption(estimationFormCase.getCommitmentTerm());
+        } else {
+            estimationFormPage.setLocalSSDOption(estimationFormCase.getLocalSSD());
+            estimationFormPage.setDataCenterLocationOption(estimationFormCase.getDataCenterLocation());
+            estimationFormPage.setCommitmentTermOption(estimationFormCase.getCommitmentTerm());
+        }
     }
 
     public void addToEstimate() {

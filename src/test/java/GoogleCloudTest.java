@@ -22,17 +22,20 @@ public class GoogleCloudTest {
     }
 
     @Test(dataProvider = "dataProvider", dataProviderClass = DP.class)
-    public void testProductEstimation(EstimationFormCase estimationFormCase) {
+    public void testProductEstimation(EstimationFormCase estimationFormCase, ValidationFormCase validationFormCase) {
         steps.moveToProductsPage();
         steps.moveToPricingPage();
         steps.moveToEstimationFormPage();
         steps.fillForm(estimationFormCase);
         steps.addToEstimate();
-    }
 
-    @Test(dataProvider = "dataProvider", dataProviderClass = DP.class, dependsOnMethods = "testProductEstimation")
-    public void testEstimationFormValidation(ValidationFormCase validationFormCase) {
         Assert.assertTrue(steps.validateEstimation(validationFormCase));
         Assert.assertTrue(steps.getTotalEstimatedCost(validationFormCase));
     }
+
+//    @Test(dataProvider = "dataProvider", dataProviderClass = DP.class, dependsOnMethods = "testProductEstimation")
+//    public void testEstimationFormValidation(ValidationFormCase validationFormCase) {
+//        Assert.assertTrue(steps.validateEstimation(validationFormCase));
+//        Assert.assertTrue(steps.getTotalEstimatedCost(validationFormCase));
+//    }
 }

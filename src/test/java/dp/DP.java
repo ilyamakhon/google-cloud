@@ -20,14 +20,14 @@ public class DP {
         switch (method.getName()) {
             case "testProductEstimation":
                 return new Object[][]{
-                        { estimationFormCases.get("1") },
-                        { estimationFormCases.get("2") }
+                        { estimationFormCases.get("1"), validationFormModelCases.get("1") },
+                        { estimationFormCases.get("2"), validationFormModelCases.get("2") }
                 };
-            case "testEstimationFormValidation":
-                return new Object[][] {
-                        { validationFormModelCases.get("1") },
-                        { validationFormModelCases.get("2") }
-                };
+//            case "testEstimationFormValidation":
+//                return new Object[][] {
+//                        { validationFormModelCases.get("1") },
+//                        { validationFormModelCases.get("2") }
+//                };
         }
         return new Object[][]{};
     }

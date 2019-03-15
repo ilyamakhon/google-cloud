@@ -2,7 +2,7 @@ package dp;
 
 import bean.EstimationFormCase;
 import bean.ValidationFormCase;
-import csvparser.CSVParser;
+import parser.CSVParser;
 import org.testng.annotations.DataProvider;
 
 import java.lang.reflect.Method;

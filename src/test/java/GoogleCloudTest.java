@@ -32,10 +32,4 @@ public class GoogleCloudTest {
         Assert.assertTrue(steps.validateEstimation(validationFormCase));
         Assert.assertTrue(steps.getTotalEstimatedCost(validationFormCase));
     }
-
-//    @Test(dataProvider = "dataProvider", dataProviderClass = DP.class, dependsOnMethods = "testProductEstimation")
-//    public void testEstimationFormValidation(ValidationFormCase validationFormCase) {
-//        Assert.assertTrue(steps.validateEstimation(validationFormCase));
-//        Assert.assertTrue(steps.getTotalEstimatedCost(validationFormCase));
-//    }
 }

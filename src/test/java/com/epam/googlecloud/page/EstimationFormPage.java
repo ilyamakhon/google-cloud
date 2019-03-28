@@ -1,7 +1,7 @@
-package pages;
+package com.epam.googlecloud.page;
 
-import bean.ValidationFormCase;
-import bean.WebElementOptionModel;
+import com.epam.googlecloud.bean.ValidationFormCase;
+import com.epam.googlecloud.bean.WebElementOptionModel;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,8 +12,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
-import static bean.WebElementOptionModel.SelectType.SELECT_WITHOUT_GROUPS;
-import static bean.WebElementOptionModel.SelectType.SELECT_WITH_GROUPS;
+import static com.epam.googlecloud.bean.WebElementOptionModel.SelectType.SELECT_WITHOUT_GROUPS;
+import static com.epam.googlecloud.bean.WebElementOptionModel.SelectType.SELECT_WITH_GROUPS;
 
 public class EstimationFormPage extends AbstractPage{
 

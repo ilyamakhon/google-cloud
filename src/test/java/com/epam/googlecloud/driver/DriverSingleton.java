@@ -1,4 +1,4 @@
-package driver;
+package com.epam.googlecloud.driver;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 public class DriverSingleton {
 
     private static final String WEB_DRIVER_URL = "D:\\work\\webdriver\\chromedriver.exe";
-    private static final String WEB_DRIVER = "webdriver.chrome.driver";
+    private static final String WEB_DRIVER = "webdriver.chrome.com.epam.googlecloud.driver";
     private static WebDriver driver;
 
     private DriverSingleton() {

@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e01d8d81-78c9-4502-b723-044c42e287dc" name="Default Changelist" comment="CSV cases added">
+    <list default="true" id="e01d8d81-78c9-4502-b723-044c42e287dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GoogleCloudTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GoogleCloudTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/csvparser/CSVParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parser/CSVParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/csvparser/CSVParserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parser/CSVParserImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dp/DP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dp/DP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GoogleCloudTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/googlecloud/test/GoogleCloudTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bean/EstimationFormCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/googlecloud/bean/EstimationFormCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bean/EstimationFormCasesWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/googlecloud/bean/EstimationFormCasesWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bean/ValidationFormCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/googlecloud/bean/ValidationFormCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bean/ValidationFormWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/googlecloud/bean/ValidationFormWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bean/WebElementOptionModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/googlecloud/bean/WebElementOptionModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dp/DP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/googlecloud/dp/DP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/driver/DriverSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/googlecloud/driver/DriverSingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/element/Dropdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/googlecloud/element/Dropdown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/AbstractPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/googlecloud/page/AbstractPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/EstimationFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/googlecloud/page/EstimationFormPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PricingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/googlecloud/page/PricingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/googlecloud/page/ProductsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/StartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/googlecloud/page/StartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parser/CSVParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/googlecloud/parser/CSVParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parser/CSVParserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/googlecloud/parser/CSVParserImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/googlecloud/steps/Steps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/FillForm.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validation.csv" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,10 +37,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/bean/WebElementOptionModel.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/googlecloud/page/ProductsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="204">
+              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#575#576#0" expanded="true" />
+                <element signature="e#621#622#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/googlecloud/page/PricingPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,24 +63,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/EstimationFormPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4063">
-              <caret line="258" column="5" selection-start-line="258" selection-start-column="5" selection-end-line="258" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2944#2945#0" expanded="true" />
-                <element signature="e#2990#2991#0" expanded="true" />
-              </folding>
-            </state>
+        <entry file="file://$PROJECT_DIR$/src/test/resources/data_tables/cases.csv">
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
           </provider>
+          <provider selected="true" editor-type-id="csv-text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/element/Dropdown.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/googlecloud/parser/CSVParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state relative-caret-position="221">
+              <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,19 +83,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/googlecloud/parser/CSVParserImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="692">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/dp/DP.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+            <state relative-caret-position="187">
+              <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,10 +95,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/GoogleCloudTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/googlecloud/test/GoogleCloudTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="28" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="28" />
+            <state relative-caret-position="348">
+              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,44 +107,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testng.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-            </state>
+        <entry file="file://$PROJECT_DIR$/src/test/resources/data_tables/validation.csv">
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
           </provider>
+          <provider selected="true" editor-type-id="csv-text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/FillForm.feature">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/googlecloud/page/EstimationFormPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/PricingPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+            <state relative-caret-position="-413">
+              <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#553#554#0" expanded="true" />
-                <element signature="e#599#600#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/parser/CSVParser.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/googlecloud/steps/Steps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="-68">
+              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/googlecloud/page/StartPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#574#575#0" expanded="true" />
+                <element signature="e#620#621#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -184,13 +202,22 @@
         <option value="$PROJECT_DIR$/src/test/java/bean/ValidationFormCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/driver/DriverSingleton.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/EstimationFormPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/Steps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/dp/DP.java" />
         <option value="$PROJECT_DIR$/src/test/java/element/Dropdown.java" />
-        <option value="$PROJECT_DIR$/src/test/java/GoogleCloudTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/cucumber/CucumberRunner.java" />
+        <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/FillForm.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/ComputeEngine.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/ComputeEngine.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/GoogleCloudTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/dp/DP.java" />
+        <option value="$PROJECT_DIR$/src/test/java/parser/CSVParserImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/Steps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/epam/googlecloud/page/StartPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/epam/googlecloud/page/ProductsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/epam/googlecloud/steps/Steps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/epam/googlecloud/page/PricingPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/epam/googlecloud/parser/CSVParserImpl.java" />
       </list>
     </option>
   </component>
@@ -207,9 +234,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="850" />
-    <option name="height" value="1017" />
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -219,7 +247,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -250,19 +277,55 @@
               <item name="google-cloud" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="googlecloud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="google-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="google-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="googlecloud" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="google-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="google-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="googlecloud" type="462c0819:PsiDirectoryNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="google-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="google-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="google-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="google-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="data_tables" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552661198059" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553525434129" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../api-testing" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -273,7 +336,12 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.epam.googlecloud" />
+      <recent name="test" />
       <recent name="pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ilya_makhon\IdeaProjects\google-cloud\src\test\resources\features" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -292,7 +360,7 @@
     <configuration name="GoogleCloudTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="googlecloud" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GoogleCloudTest" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.googlecloud.test.GoogleCloudTest" />
       <properties />
       <listeners />
       <method v="2">
@@ -302,7 +370,7 @@
     <configuration name="GoogleCloudTest.testProductEstimation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="googlecloud" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GoogleCloudTest" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.googlecloud.test.GoogleCloudTest" />
       <option name="METHOD_NAME" value="testProductEstimation" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -345,7 +413,18 @@
       <workItem from="1552548321046" duration="1999000" />
       <workItem from="1552550379923" duration="3785000" />
       <workItem from="1552635389314" duration="1240000" />
-      <workItem from="1552638922986" duration="3341000" />
+      <workItem from="1552638922986" duration="4316000" />
+      <workItem from="1552892598204" duration="12846000" />
+      <workItem from="1552982948937" duration="2988000" />
+      <workItem from="1552997954359" duration="588000" />
+      <workItem from="1553067196787" duration="2110000" />
+      <workItem from="1553158349870" duration="735000" />
+      <workItem from="1553259371527" duration="1077000" />
+      <workItem from="1553497212361" duration="5509000" />
+      <workItem from="1553592203890" duration="1217000" />
+      <workItem from="1553670974664" duration="1813000" />
+      <workItem from="1553679701587" duration="1164000" />
+      <workItem from="1553756601378" duration="1521000" />
     </task>
     <task id="LOCAL-00001" summary="Waiter fixes">
       <created>1551684588862</created>
@@ -445,28 +524,24 @@
       <option name="project" value="LOCAL" />
       <updated>1552481881725</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="cucumber integrated">
+      <created>1552661226375</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1552661226375</updated>
+    </task>
+    <task id="LOCAL-00016" summary="cucumber integrated">
+      <created>1552661261834</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1552661261834</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GoogleCloudTest - 2019.03.13 at 14h 48m 11s.xml">
-      <configuration name="GoogleCloudTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="GoogleCloudTest - 2019.03.13 at 14h 48m 49s.xml">
-      <configuration name="GoogleCloudTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="GoogleCloudTest - 2019.03.13 at 14h 49m 24s.xml">
-      <configuration name="GoogleCloudTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="GoogleCloudTest - 2019.03.13 at 14h 56m 28s.xml">
-      <configuration name="GoogleCloudTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="GoogleCloudTest - 2019.03.13 at 15h 48m 24s.xml">
-      <configuration name="GoogleCloudTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="GoogleCloudTest - 2019.03.14 at 10h 26m 39s.xml">
-      <configuration name="GoogleCloudTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="GoogleCloudTest - 2019.03.14 at 10h 27m 53s.xml">
       <configuration name="GoogleCloudTest" configurationId="TestNG" />
     </history-entry>
@@ -479,9 +554,27 @@
     <history-entry file="GoogleCloudTest - 2019.03.14 at 10h 39m 28s.xml">
       <configuration name="GoogleCloudTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="GoogleCloudTest - 2019.03.25 at 11h 38m 13s.xml">
+      <configuration name="GoogleCloudTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GoogleCloudTest - 2019.03.25 at 11h 45m 25s.xml">
+      <configuration name="GoogleCloudTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GoogleCloudTest - 2019.03.28 at 10h 26m 44s.xml">
+      <configuration name="GoogleCloudTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GoogleCloudTest - 2019.03.28 at 10h 28m 12s.xml">
+      <configuration name="GoogleCloudTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GoogleCloudTest - 2019.03.28 at 10h 29m 53s.xml">
+      <configuration name="GoogleCloudTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GoogleCloudTest - 2019.03.28 at 10h 34m 33s.xml">
+      <configuration name="GoogleCloudTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136437000" />
+    <option name="totallyTimeSpent" value="168980000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -496,7 +589,7 @@
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7950728" visible="true" weight="0.19865526" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7950728" visible="true" weight="0.15647922" />
       <window_info id="Structure" order="1" sideWeight="0.2049272" side_tool="true" weight="0.1913203" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -505,7 +598,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32922733" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4987775" weight="0.31578946" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4987775" visible="true" weight="0.14109743" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -544,7 +637,8 @@
     <MESSAGE value="naming fixes" />
     <MESSAGE value="stable version" />
     <MESSAGE value="CSV cases added" />
-    <option name="LAST_COMMIT_MESSAGE" value="CSV cases added" />
+    <MESSAGE value="cucumber integrated" />
+    <option name="LAST_COMMIT_MESSAGE" value="cucumber integrated" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://D:/work/oracle/java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/System.java" />
@@ -556,130 +650,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bean/EstimationFormCasesWrapper.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/googlecloud/bean/EstimationFormCasesWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bean/EstimationFormCase.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/googlecloud/bean/EstimationFormCase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/Steps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="71" column="67" selection-start-line="71" selection-start-column="67" selection-end-line="71" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bean/ValidationFormCase.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/googlecloud/bean/ValidationFormCase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bean/ValidationFormWrapper.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/googlecloud/bean/ValidationFormWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="23" column="74" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/AbstractPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding>
-            <element signature="e#167#168#0" expanded="true" />
-            <element signature="e#203#204#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/ProductsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="73" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/StartPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/parser/CSVParserImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="69" column="27" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cases.csv">
-      <provider editor-type-id="text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="165" selection-start-line="2" selection-start-column="165" selection-end-line="2" selection-end-column="165" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/driver/DriverSingleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bean/WebElementOptionModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/EstimationFormPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4063">
-          <caret line="258" column="5" selection-start-line="258" selection-start-column="5" selection-end-line="258" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2944#2945#0" expanded="true" />
-            <element signature="e#2990#2991#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/element/Dropdown.java">
+    <entry file="file://$PROJECT_DIR$/cases.csv" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/cucumber/CucumberRunner.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/FillForm.features" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/googlecloud/element/Dropdown.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
@@ -689,76 +691,158 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/dp/DP.java">
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="53" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/ComputeEngine.feature" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/googlecloud/page/AbstractPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/googlecloud/driver/DriverSingleton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/PricingPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/parser/CSVParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cucumber/CucumberRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="357">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/GoogleCloudTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/googlecloud/bean/WebElementOptionModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="28" />
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/FillForm.features">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/googlecloud/dp/DP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        <state relative-caret-position="187">
+          <caret line="17" column="81" selection-start-line="17" selection-start-column="81" selection-end-line="17" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/FillForm.feature">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar!/org/openqa/selenium/support/PageFactory.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/googlecloud/page/StartPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/googlecloud/page/ProductsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/googlecloud/page/PricingPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/data_tables/validation.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/googlecloud/parser/CSVParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/googlecloud/test/GoogleCloudTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/googlecloud/steps/Steps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/data_tables/cases.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/googlecloud/parser/CSVParserImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/googlecloud/page/EstimationFormPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-413">
+          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

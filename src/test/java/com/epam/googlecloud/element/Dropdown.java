@@ -1,4 +1,4 @@
-package element;
+package com.epam.googlecloud.element;
 
 import org.openqa.selenium.*;
 

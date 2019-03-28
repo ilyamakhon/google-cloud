@@ -1,9 +1,9 @@
-package parser;
+package com.epam.googlecloud.parser;
 
-import bean.EstimationFormCase;
-import bean.EstimationFormCasesWrapper;
-import bean.ValidationFormCase;
-import bean.ValidationFormWrapper;
+import com.epam.googlecloud.bean.EstimationFormCase;
+import com.epam.googlecloud.bean.EstimationFormCasesWrapper;
+import com.epam.googlecloud.bean.ValidationFormCase;
+import com.epam.googlecloud.bean.ValidationFormWrapper;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
 
@@ -19,8 +19,8 @@ public class CSVParserImpl implements CSVParser {
     private EstimationFormCasesWrapper estimationFormCasesWrapper = new EstimationFormCasesWrapper();
     private ValidationFormWrapper validationFormWrapper = new ValidationFormWrapper();
 
-    private final static String ESTIMATION_CASES_URL = "C:\\Users\\ilya_makhon\\Desktop\\cases.csv";
-    private final static String VALIDATION_CASES_URL = "C:\\Users\\ilya_makhon\\Desktop\\validation.csv";
+    private final static String ESTIMATION_CASES_URL = "src\\test\\resources\\data_tables\\cases.csv";
+    private final static String VALIDATION_CASES_URL = "src\\test\\resources\\data_tables\\validation.csv";
     private final static String[] ESTIMATION_CASES_HEADERS = {
             "Number Of Instances",
             "Operating system and software",

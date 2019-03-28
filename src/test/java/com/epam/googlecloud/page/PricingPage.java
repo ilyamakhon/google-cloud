@@ -1,4 +1,4 @@
-package pages;
+package com.epam.googlecloud.page;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,8 +22,8 @@ public class PricingPage extends AbstractPage{
         driver.navigate().to(BASE_URL);
     }
 
-    public PricingPage calculate() {
+    public EstimationFormPage calculate() {
         calculatorsLink.click();
-        return this;
+        return PageFactory.initElements(driver, EstimationFormPage.class);
     }
 }

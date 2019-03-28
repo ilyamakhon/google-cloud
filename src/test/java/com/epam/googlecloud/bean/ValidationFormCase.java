@@ -1,4 +1,4 @@
-package bean;
+package com.epam.googlecloud.bean;
 
 import java.util.Objects;
 

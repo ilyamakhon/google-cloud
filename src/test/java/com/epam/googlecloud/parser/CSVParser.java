@@ -1,7 +1,7 @@
-package parser;
+package com.epam.googlecloud.parser;
 
-import bean.EstimationFormCase;
-import bean.ValidationFormCase;
+import com.epam.googlecloud.bean.EstimationFormCase;
+import com.epam.googlecloud.bean.ValidationFormCase;
 
 import java.util.HashMap;
 

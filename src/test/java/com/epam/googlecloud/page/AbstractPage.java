@@ -1,4 +1,4 @@
-package pages;
+package com.epam.googlecloud.page;
 
 import org.openqa.selenium.WebDriver;
 

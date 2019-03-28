@@ -1,10 +1,9 @@
-package pages;
+package com.epam.googlecloud.page;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ProductsPage extends AbstractPage{
 
@@ -23,9 +22,9 @@ public class ProductsPage extends AbstractPage{
         driver.navigate().to(BASE_URL);
     }
 
-    public ProductsPage seePricing() {
+    public PricingPage seePricing() {
         seePricingLink.click();
-        return this;
+        return PageFactory.initElements(driver, PricingPage.class);
     }
 
 }

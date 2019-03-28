@@ -1,3 +1,0 @@
-estimationCaseID,Number of instances,Operating system and software,VM Class,Instance type,Add GPU,Number of GPUs,GPU type,Local SSD,Datacenter Location,Commitment term
-1,4,"Free: Debian, CentOS, CoreOS, Ubuntu, or other User Provided OS","Regular","n1-standard-8    (vCPUs: 8, RAM: 30 GB)","No",1,"NVIDIA Tesla V100","2x375 GB","Frankfurt (europe-west3)","1 Year"
-2,4,"Free: Debian, CentOS, CoreOS, Ubuntu, or other User Provided OS","Regular","n1-standard-8    (vCPUs: 8, RAM: 30 GB)","Yes",1,"NVIDIA Tesla V100","2x375 GB","Frankfurt (europe-west3)","1 Year"

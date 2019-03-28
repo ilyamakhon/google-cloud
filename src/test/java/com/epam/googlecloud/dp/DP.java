@@ -1,8 +1,8 @@
-package dp;
+package com.epam.googlecloud.dp;
 
-import bean.EstimationFormCase;
-import bean.ValidationFormCase;
-import parser.CSVParser;
+import com.epam.googlecloud.bean.EstimationFormCase;
+import com.epam.googlecloud.bean.ValidationFormCase;
+import com.epam.googlecloud.parser.CSVParser;
 import org.testng.annotations.DataProvider;
 
 import java.lang.reflect.Method;
@@ -23,11 +23,6 @@ public class DP {
                         { estimationFormCases.get("1"), validationFormModelCases.get("1") },
                         { estimationFormCases.get("2"), validationFormModelCases.get("2") }
                 };
-//            case "testEstimationFormValidation":
-//                return new Object[][] {
-//                        { validationFormModelCases.get("1") },
-//                        { validationFormModelCases.get("2") }
-//                };
         }
         return new Object[][]{};
     }

@@ -31,7 +31,7 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.0.0-beta3</version>
-            <scope>test</scope>
+            <scope>com.epam.googlecloud.test</scope>
         </dependency>
 
         <dependency>
@@ -50,7 +50,7 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>4.2.5</version>
-            <scope>test</scope>
+            <scope>com.epam.googlecloud.test</scope>
         </dependency>
 
         <dependency>

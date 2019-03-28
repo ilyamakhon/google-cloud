@@ -1,13 +1,11 @@
-package steps;
+package com.epam.googlecloud.steps;
 
-import bean.EstimationFormCase;
-import bean.ValidationFormCase;
-import driver.DriverSingleton;
+import com.epam.googlecloud.bean.EstimationFormCase;
+import com.epam.googlecloud.bean.ValidationFormCase;
+import com.epam.googlecloud.driver.DriverSingleton;
+import com.epam.googlecloud.page.EstimationFormPage;
+import com.epam.googlecloud.page.StartPage;
 import org.openqa.selenium.WebDriver;
-import pages.EstimationFormPage;
-import pages.PricingPage;
-import pages.ProductsPage;
-import pages.StartPage;
 
 public class Steps {
 
@@ -21,22 +19,14 @@ public class Steps {
         DriverSingleton.closeDriver();
     }
 
-    public void moveToProductsPage() {
+    public void moveToEstimationForm() {
         StartPage startPage = new StartPage(driver);
         startPage.openPage();
-        startPage.exploreProducts();
-    }
 
-    public void moveToPricingPage() {
-        ProductsPage productsPage = new ProductsPage(driver);
-        productsPage.openPage();
-        productsPage.seePricing();
-    }
-
-    public void moveToEstimationFormPage() {
-        PricingPage pricingPage = new PricingPage(driver);
-        pricingPage.openPage();
-        pricingPage.calculate();
+        startPage
+                .exploreProducts()
+                .seePricing()
+                .calculate();
     }
 
     public void fillForm(EstimationFormCase estimationFormCase) {

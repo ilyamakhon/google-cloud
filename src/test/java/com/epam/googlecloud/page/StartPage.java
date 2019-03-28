@@ -1,4 +1,4 @@
-package pages;
+package com.epam.googlecloud.page;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,8 +22,8 @@ public class StartPage extends AbstractPage{
         driver.navigate().to(BASE_URL);
     }
 
-    public StartPage exploreProducts() {
+    public ProductsPage exploreProducts() {
         exploreProductsLink.click();
-        return this;
+        return PageFactory.initElements(driver, ProductsPage.class);
     }
 }

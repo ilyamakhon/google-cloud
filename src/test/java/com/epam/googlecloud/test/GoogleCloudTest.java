@@ -1,11 +1,13 @@
-import bean.EstimationFormCase;
-import bean.ValidationFormCase;
-import dp.DP;
+package com.epam.googlecloud.test;
+
+import com.epam.googlecloud.bean.EstimationFormCase;
+import com.epam.googlecloud.bean.ValidationFormCase;
+import com.epam.googlecloud.dp.DP;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import steps.Steps;
+import com.epam.googlecloud.steps.Steps;
 
 public class GoogleCloudTest {
     private Steps steps;
@@ -23,9 +25,7 @@ public class GoogleCloudTest {
 
     @Test(dataProvider = "dataProvider", dataProviderClass = DP.class)
     public void testProductEstimation(EstimationFormCase estimationFormCase, ValidationFormCase validationFormCase) {
-        steps.moveToProductsPage();
-        steps.moveToPricingPage();
-        steps.moveToEstimationFormPage();
+        steps.moveToEstimationForm();
         steps.fillForm(estimationFormCase);
         steps.addToEstimate();
 
